@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MobileAppDevProject" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="colorPrimary">@color/blue_1</item>
+        <item name="colorPrimaryVariant">@color/blue_3</item>
+        <item name="colorSecondary">@color/gray_1</item>
+        <item name="colorSecondaryVariant">@color/white_1</item>
+        <item name="colorOnBackground">@color/white_1</item>
+        <item name="colorButtonNormal">@color/blue_1</item>
+        <item name="android:background">@color/white_1</item>
+        <item name="editTextColor">@color/black_1</item>
+        <item name="android:textColorHint">@color/black_2</item>
+    </style>
+
+    <style name="Theme.MobileAppDevProject" parent="Base.Theme.MobileAppDevProject" />
+</resources>
