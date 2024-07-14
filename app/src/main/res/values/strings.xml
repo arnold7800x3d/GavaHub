@@ -63,4 +63,13 @@
     <string name="id_guardian">Guardian\'s Name</string>
     <string name="id_relationship">Relationship to Applicant</string>
     <string name="id_payment">To complete your application for a National ID, click the button below to pay Ksh 100 for the service</string>
+    <string name="passport_title">PASSPORT APPLICATION\nAPPLICANT\'S DETAILS</string>
+    <string name="passport_recommender_name">Recommender\'s Name</string>
+    <string name="passport_recommender_title">RECOMMENDER\'S DETAILS</string>
+    <string name="passport_next_of_kin_title">NEXT OF KIN\'S DETAILS</string>
+    <string name="passport_next_of_kin_name">Name</string>
+    <string name="passport_payment">To complete your application for a Passport, click either of the options below</string>
+    <string name="passport34">A Series (34 pages) @ Ksh4550</string>
+    <string name="passport50">B Series (50 pages) @ Ksh6050</string>
+    <string name="passport66">C Series (66 pages) @ Ksh7550</string>
 </resources>

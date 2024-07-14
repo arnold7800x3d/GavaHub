@@ -18,15 +18,21 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater) // Initialize binding here
         setContentView(binding.root)
 
-        //kra button
-        binding.kraButton.setOnClickListener(){
-            var intent: Intent = Intent(this, KraActivity::class.java)
+        //passport button
+        binding.passportButton.setOnClickListener(){
+            var intent: Intent = Intent(this, PassportActivity::class.java)
             startActivity(intent)
         }
 
-        //business name reg button
-        binding.businessRegButton.setOnClickListener(){
-            var intent: Intent = Intent(this, BusinessNameRegActivity::class.java)
+        //national ID button
+        binding.idButton.setOnClickListener(){
+            var intent: Intent = Intent(this, NationalIDActivity::class.java)
+            startActivity(intent)
+        }
+
+        //kra button
+        binding.kraButton.setOnClickListener(){
+            var intent: Intent = Intent(this, KraActivity::class.java)
             startActivity(intent)
         }
 
@@ -36,6 +42,17 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //business name reg button
+        binding.nameRegButton.setOnClickListener(){
+            var intent: Intent = Intent(this, BusinessNameRegActivity::class.java)
+            startActivity(intent)
+        }
+
+        //business rev button
+        binding.businessRegButton.setOnClickListener(){
+            var intent: Intent = Intent(this, BusinessRegActivity::class.java)
+            startActivity(intent)
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

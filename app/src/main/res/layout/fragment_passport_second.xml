@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/frameLayout15"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PassportSecondFragment">
+
+    <TextView
+        android:id="@+id/passport2TitletextView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="@string/id2_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/passport2Nextbutton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/next_page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/passport2MothereditTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/id_mother"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passport2TitletextView7" />
+
+    <EditText
+        android:id="@+id/passport2FathereditTextText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="@string/id_father"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passport2Date1editTextDate4" />
+
+    <EditText
+        android:id="@+id/passport2ID1editTextNumber2"
+        android:layout_width="171dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/idNo"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/passport2MothereditTextText"
+        app:layout_constraintTop_toBottomOf="@+id/passport2TitletextView7" />
+
+    <EditText
+        android:id="@+id/passporteditTextDate"
+        android:layout_width="189dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/id_dod"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passport2ID1editTextNumber2" />
+
+    <EditText
+        android:id="@+id/passport2ID2editTextNumber5"
+        android:layout_width="169dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/idNo"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passporteditTextDate" />
+
+    <EditText
+        android:id="@+id/passport2Date2editTextNumber6"
+        android:layout_width="192dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/kra_date"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passport2FathereditTextText3" />
+
+    <EditText
+        android:id="@+id/passport2Date3editTextDate2"
+        android:layout_width="186dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/id_dod"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passport2ID2editTextNumber5" />
+
+    <EditText
+        android:id="@+id/id2GuardianeditTextText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/id_guardian"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passport2Date2editTextNumber6" />
+
+    <EditText
+        android:id="@+id/passporteditTextNumber7"
+        android:layout_width="165dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:hint="@string/idNo"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passport2Date3editTextDate2" />
+
+    <EditText
+        android:id="@+id/passporteditTextDate3"
+        android:layout_width="196dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/kra_date"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id2GuardianeditTextText4" />
+
+    <EditText
+        android:id="@+id/passport2Date1editTextDate4"
+        android:layout_width="189dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/kra_date"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passport2MothereditTextText" />
+
+    <EditText
+        android:id="@+id/passporteditTextDate5"
+        android:layout_width="192dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/id_dod"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toEndOf="@+id/passporteditTextDate3"
+        app:layout_constraintTop_toBottomOf="@+id/passporteditTextNumber7" />
+
+    <EditText
+        android:id="@+id/editTextText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/id_relationship"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passporteditTextDate3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

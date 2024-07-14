@@ -20,21 +20,12 @@
         android:label="fragment_national_i_d_second"
         tools:layout="@layout/fragment_national_i_d_second" >
         <action
-            android:id="@+id/action_nationalIDSecondFragment_to_nationalIDFileUploadFragment"
-            app:destination="@id/nationalIDFileUploadFragment" />
+            android:id="@+id/action_nationalIDSecondFragment_to_nationalIDPaymentFragment"
+            app:destination="@id/nationalIDPaymentFragment" />
     </fragment>
     <fragment
         android:id="@+id/nationalIDPaymentFragment"
         android:name="com.arnold7800.mobileappdevproject.NationalIDPaymentFragment"
         android:label="fragment_national_i_d_payment"
         tools:layout="@layout/fragment_national_i_d_payment" />
-    <fragment
-        android:id="@+id/nationalIDFileUploadFragment"
-        android:name="com.arnold7800.mobileappdevproject.NationalIDFileUploadFragment"
-        android:label="fragment_national_i_d_file_upload"
-        tools:layout="@layout/fragment_national_i_d_file_upload" >
-        <action
-            android:id="@+id/action_nationalIDFileUploadFragment_to_nationalIDPaymentFragment"
-            app:destination="@id/nationalIDPaymentFragment" />
-    </fragment>
 </navigation>
