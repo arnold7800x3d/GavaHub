@@ -54,4 +54,13 @@
     <string name="dLpayment">To complete your application for the Driving License, choose either of the options below</string>
     <string name="dLthreeyear">Three-year license renewal @Ksh1400</string>
     <string name="dLoneyear">One-year license renewal @Ksh600</string>
+    <string name="id_title">NATIONAL ID APPLICATION\nAPPLICANT\'S DETAILS</string>
+    <string name="id_pob">Place of Birth</string>
+    <string name="id2_title">PARENT\'S / GUARDIAN\'S DETAILS</string>
+    <string name="id_mother">Mother\'s Name</string>
+    <string name="id_dod">Date of Death</string>
+    <string name="id_father">Father\'s Name</string>
+    <string name="id_guardian">Guardian\'s Name</string>
+    <string name="id_relationship">Relationship to Applicant</string>
+    <string name="id_payment">To complete your application for a National ID, click the button below to pay Ksh 100 for the service</string>
 </resources>

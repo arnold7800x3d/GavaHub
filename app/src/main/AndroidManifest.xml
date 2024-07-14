@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MobileAppDevProject"
         tools:targetApi="31">
         <activity
+            android:name=".PassportActivity"
+            android:exported="false" />
+        <activity
             android:name=".NationalIDActivity"
             android:exported="false" />
         <activity

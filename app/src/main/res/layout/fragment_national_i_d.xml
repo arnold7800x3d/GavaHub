@@ -11,79 +11,100 @@
 
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/idTitletextView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
-        android:text="TextView"
+        android:layout_marginTop="96dp"
+        android:gravity="center"
+        android:text="@string/id_title"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/idNameeditTextText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="162dp" />
+        android:hint="@string/kra_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTitletextView7" />
 
     <EditText
         android:id="@+id/editTextNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:ems="10"
+        android:hint="@string/phonenumber"
         android:inputType="number"
-        tools:layout_editor_absoluteX="107dp"
-        tools:layout_editor_absoluteY="223dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idPlaceofBirtheditTextText3" />
 
     <EditText
         android:id="@+id/editTextText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:ems="10"
+        android:hint="@string/kra_sex"
         android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="299dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iddNameeditTextDate" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/iddNameeditTextDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:ems="10"
+        android:hint="@string/kra_date"
         android:inputType="date"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="361dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idNameeditTextText" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/idPlaceofBirtheditTextText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:ems="10"
+        android:hint="@string/id_pob"
         android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="427dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/idZipeditTextNumber2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:ems="10"
+        android:hint="@string/zipcode"
         android:inputType="number"
-        tools:layout_editor_absoluteX="109dp"
-        tools:layout_editor_absoluteY="489dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/idNextbutton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="575dp" />
+        android:layout_marginTop="36dp"
+        android:text="@string/next_page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idZipeditTextNumber2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
