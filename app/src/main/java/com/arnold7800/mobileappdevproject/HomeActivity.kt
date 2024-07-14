@@ -30,6 +30,12 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //driver's License button
+        binding.dLButton.setOnClickListener(){
+            var intent: Intent = Intent(this, DrivingLicenseActivity::class.java)
+            startActivity(intent)
+        }
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

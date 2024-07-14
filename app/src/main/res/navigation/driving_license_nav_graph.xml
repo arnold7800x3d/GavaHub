@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/driving_license_nav_graph"
+    app:startDestination="@id/drivingLicenseFragment">
+
+    <fragment
+        android:id="@+id/drivingLicenseFragment"
+        android:name="com.arnold7800.mobileappdevproject.DrivingLicenseFragment"
+        android:label="fragment_driving_license"
+        tools:layout="@layout/fragment_driving_license" >
+        <action
+            android:id="@+id/action_drivingLicenseFragment_to_drivingLicenseInstructionFragment"
+            app:destination="@id/drivingLicenseInstructionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drivingLicenseInstructionFragment"
+        android:name="com.arnold7800.mobileappdevproject.DrivingLicenseInstructionFragment"
+        android:label="fragment_driving_license_instruction"
+        tools:layout="@layout/fragment_driving_license_instruction" >
+        <action
+            android:id="@+id/action_drivingLicenseInstructionFragment_to_drivingLicensePaymentFragment"
+            app:destination="@id/drivingLicensePaymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drivingLicensePaymentFragment"
+        android:name="com.arnold7800.mobileappdevproject.DrivingLicensePaymentFragment"
+        android:label="fragment_driving_license_payment"
+        tools:layout="@layout/fragment_driving_license_payment" />
+</navigation>

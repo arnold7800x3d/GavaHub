@@ -7,22 +7,22 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
-import com.arnold7800.mobileappdevproject.databinding.FragmentBusinessRegFileUploadBinding
+import com.arnold7800.mobileappdevproject.databinding.FragmentDrivingLicenseBinding
 
+class DrivingLicenseFragment : Fragment() {
 
-class BusinessRegFileUploadFragment : Fragment() {
-    private lateinit var binding: FragmentBusinessRegFileUploadBinding
+   private lateinit var binding: FragmentDrivingLicenseBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_business_reg_file_upload, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_driving_license, container, false)
 
         //on click event
-        binding.busRPaymentbutton.setOnClickListener{
-            it.findNavController().navigate(R.id.action_businessRegFileUploadFragment_to_businessRegPaymentFragment)
+        binding.dLNextbutton.setOnClickListener{
+            it.findNavController().navigate(R.id.action_drivingLicenseFragment_to_drivingLicenseInstructionFragment)
         }
         return binding.root
     }

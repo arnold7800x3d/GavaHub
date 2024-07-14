@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/national_id_nav_graph"
+    app:startDestination="@id/nationalIDFragment">
+
+    <fragment
+        android:id="@+id/nationalIDFragment"
+        android:name="com.arnold7800.mobileappdevproject.NationalIDFragment"
+        android:label="fragment_national_i_d"
+        tools:layout="@layout/fragment_national_i_d" />
+</navigation>
