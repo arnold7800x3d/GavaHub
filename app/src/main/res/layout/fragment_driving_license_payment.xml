@@ -14,11 +14,15 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="180dp"
         android:gravity="center"
+        android:fontFamily="@font/mulish_semi_bold"
+        android:textSize="20sp"
+        android:padding="5dp"
+
         android:text="@string/dLpayment"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,15 +30,16 @@
         android:id="@+id/dLThreeYearbutton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="280dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="255dp"
+        android:fontFamily="@font/mulish_semi_bold"
         android:text="@string/payment_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dLOneYearbutton4"
-        app:layout_constraintVertical_bias="0.909" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/dLThreeYeartextView7"
@@ -51,10 +56,10 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="56dp"
         android:text="@string/dLoneyear"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dLThreeYeartextView7" />
 
@@ -63,8 +68,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="0dp"
+        android:fontFamily="@font/mulish_semi_bold"
         android:text="@string/payment_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
