@@ -14,17 +14,19 @@
         android:id="@+id/passportNextOfKinTitletextView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="104dp"
+        android:fontFamily="@font/mulish_semi_bold"
         android:text="@string/passport_next_of_kin_title"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/passportNextOfKinNameeditTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
         android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="@string/passport_next_of_kin_name"
@@ -36,8 +38,8 @@
 
     <EditText
         android:id="@+id/passportNextOfKinIDeditTextNumber2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="@string/idNo"
@@ -49,8 +51,8 @@
 
     <EditText
         android:id="@+id/passportNextOfKinDOBeditTextDate2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
         android:layout_marginTop="28dp"
         android:ems="10"
         android:hint="@string/kra_date"
@@ -62,8 +64,8 @@
 
     <EditText
         android:id="@+id/passportNextOfKinSexeditTextText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
         android:layout_marginTop="28dp"
         android:ems="10"
         android:inputType="text"
@@ -75,8 +77,8 @@
 
     <EditText
         android:id="@+id/passportNextOfKinPhoneeditTextPhone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="@string/phonenumber"
@@ -88,8 +90,8 @@
 
     <EditText
         android:id="@+id/passportNextOfKinRshpeditTextText6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
         android:layout_marginTop="28dp"
         android:ems="10"
         android:inputType="text"
@@ -104,6 +106,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
+        android:fontFamily="@font/mulish_semi_bold"
+        android:textSize="18sp"
         android:text="@string/next_page"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
