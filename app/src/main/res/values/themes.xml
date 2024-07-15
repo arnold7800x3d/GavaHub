@@ -1,19 +1,66 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.MobileAppDevProject" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-
+    <!-- Base application theme -->
+    <style name="Base.Style.MobileAppDevProject" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Colors -->
         <item name="colorPrimary">@color/blue_1</item>
         <item name="colorPrimaryVariant">@color/blue_3</item>
         <item name="colorSecondary">@color/gray_1</item>
         <item name="colorSecondaryVariant">@color/white_1</item>
-        <item name="colorOnBackground">@color/white_1</item>
-        <item name="colorButtonNormal">@color/blue_1</item>
-        <item name="android:background">@color/white_1</item>
-        <item name="editTextColor">@color/black_1</item>
+        <item name="android:colorBackground">@color/white_2</item>
+        <item name="colorSurface">@color/white_2</item>
+        <item name="colorBackgroundFloating">@color/white_1</item>
+        <item name="android:textColorPrimary">@color/black_1</item>
+        <item name="android:textColorSecondary">@color/black_2</item>
         <item name="android:textColorHint">@color/black_2</item>
+        <item name="android:editTextColor">@color/black_1</item>
+        <item name="colorButtonNormal">@color/blue_1</item>
+        <item name="colorAccent">@color/blue_2</item>
+        <item name="colorError">@color/gray_1</item>
+
+        <!-- Typography -->
+        <item name="fontFamily">@font/custom_font_family</item>
+        <item name="android:textSize">14sp</item>
+
+        <!-- Shape appearance -->
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MediumComponent</item>
+
+        <!-- Status bar and navigation bar colors -->
+        <item name="android:statusBarColor">@color/blue_1</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/blue_1</item>
+
+        <!-- Custom attributes -->
+        <item name="android:buttonStyle">@style/ButtonStyle.MobileAppDevProject</item>
     </style>
 
-    <style name="Theme.MobileAppDevProject" parent="Base.Theme.MobileAppDevProject" />
+    <!-- Custom button style -->
+    <style name="ButtonStyle.MobileAppDevProject" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/blue_1</item>
+        <item name="android:textColor">@color/white_1</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="font">@font/mulish_bold</item>
+    </style>
+
+    <!-- Shape appearance for medium components -->
+    <style name="ShapeAppearance.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <!-- Custom EditText style -->
+    <style name="EditTextStyle.MobileAppDevProject" parent="Widget.AppCompat.EditText">
+        <item name="android:textAppearance">@style/Base.Theme.MobileAppDevProject</item>
+        <item name="android:textColor">@color/black_1</item>
+        <item name="android:textColorHint">@color/black_2</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="font">@font/mulish_regular</item>
+        <item name="android:background">@drawable/edittext_background</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
 </resources>
