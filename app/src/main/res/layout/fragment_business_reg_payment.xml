@@ -15,6 +15,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="204dp"
+        android:padding="10dp"
+        android:fontFamily="@font/mulish_semi_bold"
+        android:textSize="20sp"
         android:text="@string/busR_payment"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,6 +32,8 @@
         android:layout_marginTop="116dp"
         android:text="@string/payment_button"
         android:textAllCaps="true"
+        android:fontFamily="@font/mulish_semi_bold"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/busRPaymenttextView" />
