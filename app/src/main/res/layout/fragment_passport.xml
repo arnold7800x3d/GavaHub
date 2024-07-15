@@ -16,6 +16,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:gravity="center"
+        android:fontFamily="@font/mulish_semi_bold"
+        android:textSize="20sp"
         android:text="@string/passport_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,8 +25,8 @@
 
     <EditText
         android:id="@+id/passportNameeditTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
         android:layout_marginTop="28dp"
         android:ems="10"
         android:inputType="text"
@@ -36,8 +38,8 @@
 
     <EditText
         android:id="@+id/passportDobeditTextDate2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="@string/kra_date"
@@ -49,8 +51,8 @@
 
     <EditText
         android:id="@+id/passportSexeditTextText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
         android:layout_marginTop="28dp"
         android:ems="10"
         android:inputType="text"
@@ -62,8 +64,8 @@
 
     <EditText
         android:id="@+id/editTextText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
         android:layout_marginTop="28dp"
         android:ems="10"
         android:inputType="text"
@@ -74,8 +76,8 @@
 
     <EditText
         android:id="@+id/passportPhoneNoeditTextNumber2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="@string/phonenumber"
@@ -87,8 +89,8 @@
 
     <EditText
         android:id="@+id/passportZipeditTextNumber3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="@string/zipcode"
@@ -103,6 +105,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:fontFamily="@font/mulish_semi_bold"
+        android:textSize="18sp"
         android:text="@string/next_page"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
