@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/mulish_black" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/mulish_black_italic" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="700"
+        android:font="@font/mulish_bold" />
+   <font 
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/mulish_semi_bold" />
+    <font
+        android:fontStyle="italic"
+        android:fontWeight="400"
+        android:font="@font/mulish_variable_font_wght" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/mulish_italic_variable_font_wght" />
+</font-family>
