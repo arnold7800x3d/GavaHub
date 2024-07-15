@@ -14,17 +14,19 @@
         android:id="@+id/passportRecommenderTitletextView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="128dp"
+        android:fontFamily="@font/mulish_semi_bold"
         android:text="@string/passport_recommender_title"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/passportRecommenderNameeditTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
         android:layout_marginTop="28dp"
         android:ems="10"
         android:hint="@string/passport_recommender_name"
@@ -36,9 +38,9 @@
 
     <EditText
         android:id="@+id/passportRecommenderDOBeditTextDate2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="28dp"
         android:ems="10"
         android:hint="@string/kra_date"
         android:inputType="date"
@@ -49,9 +51,9 @@
 
     <EditText
         android:id="@+id/passportRecommenderPhoneeditTextNumber2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="28dp"
         android:ems="10"
         android:hint="@string/phonenumber"
         android:inputType="number"
@@ -62,9 +64,9 @@
 
     <EditText
         android:id="@+id/passportRecommenderSexeditTextText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="28dp"
         android:ems="10"
         android:hint="@string/kra_sex"
         android:inputType="text"
@@ -78,6 +80,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/next_page"
+        android:fontFamily="@font/mulish_semi_bold"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -86,9 +90,9 @@
 
     <EditText
         android:id="@+id/passportRecommenderIDeditTextNumber3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="28dp"
         android:ems="10"
         android:hint="@string/idNo"
         android:inputType="number"
