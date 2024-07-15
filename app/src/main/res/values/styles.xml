@@ -1,9 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="DescriptionStyle">
-        <item name="android:textColor">@color/black_1</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:background">?attr/colorSecondaryVariant</item>
-    </style>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MobileAppDevProject" parent="Theme.Material3.DayNight.NoActionBar">
+    <item name="colorPrimary">@color/blue_1</item>
+    <item name="colorPrimaryVariant">@color/blue_3</item>
+
+    <!-- Secondary colors -->
+    <item name="colorSecondary">@color/gray_1</item>
+    <item name="colorSecondaryVariant">@color/white_1</item>
+
+    <!-- Background colors -->
+    <item name="android:colorBackground">@color/white_2</item>
+    <item name="colorSurface">@color/white_2</item>
+    <item name="colorBackgroundFloating">@color/white_1</item>
+
+    <!-- Text colors -->
+    <item name="android:textColorPrimary">@color/black_1</item>
+    <item name="android:textColorSecondary">@color/black_2</item>
+    <item name="android:textColorHint">@color/black_2</item>
+
+    <!-- Custom font -->
+    <item name="android:fontFamily">@font/mulish_regular</item>
+
+    <!-- Button styles -->
+    <item name="colorButtonNormal">@color/blue_1</item>
+    <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Colored</item>
+
+    <!-- EditText styles -->
+    <item name="editTextColor">@color/black_1</item>
+    <item name="android:editTextBackground">@drawable/edittext_background</item>
+
+    <!-- Toolbar styles -->
+    <item name="toolbarStyle">@style/Widget.Toolbar</item>
+
+    <!-- Shape appearance -->
+</style>
+
+    <!-- Button style -->
+<style name="Widget.AppCompat.Button.Colored" parent="Widget.AppCompat.Button">
+<item name="android:backgroundTint">@color/blue_1</item>
+<item name="android:textColor">@color/white_1</item>
+<item name="font">@font/mulish_black</item>
+</style>
+
+    <!-- Toolbar style -->
+<style name="Widget.Toolbar" parent="Widget.Material3.Toolbar">
+<item name="android:background">@color/blue_1</item>
+<item name="android:titleTextColor">@color/white_1</item>
+<item name="android:subtitleTextColor">@color/white_2</item>
+<item name="font">@font/mulish_semi_bold</item>
+</style>
+
 </resources>
