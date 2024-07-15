@@ -13,32 +13,35 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="116dp"
+        android:fontFamily="@font/mulish_semi_bold"
         android:gravity="center"
         android:text="@string/dL_title"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintHorizontal_bias="0.643"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/dLNameeditTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="225dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
-        android:inputType="text"
         android:hint="@string/kra_name"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.655"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dLReneworFirsteditTextText3" />
 
     <EditText
         android:id="@+id/dLDateeditTextDate"
         android:layout_width="166dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
         android:ems="10"
         android:hint="@string/kra_date"
         android:inputType="date"
@@ -48,9 +51,9 @@
     <EditText
         android:id="@+id/dLIDeditTextNumber"
         android:layout_width="164dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:hint="@string/idNo"
         android:inputType="number"
@@ -59,35 +62,36 @@
 
     <EditText
         android:id="@+id/dLEmaileditTextTextEmailAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="225dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="@string/kra_email"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.655"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dLPhoneeditTextPhone" />
 
     <EditText
         android:id="@+id/dLPhoneeditTextPhone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_width="225dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="@string/phonenumber"
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.655"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dLNameeditTextText" />
 
     <EditText
         android:id="@+id/dLSexeditTextText2"
         android:layout_width="167dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
         android:hint="@string/kra_sex"
         android:inputType="text"
@@ -97,22 +101,22 @@
     <EditText
         android:id="@+id/dLPostaleditTextTextPostalAddress"
         android:layout_width="166dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="44dp"
         android:ems="10"
         android:hint="@string/kra_postaladdress"
         android:inputType="textPostalAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.608"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dLSexeditTextText2" />
 
     <EditText
         android:id="@+id/dLZipeditTextNumber2"
         android:layout_width="166dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="12dp"
         android:ems="10"
         android:hint="@string/zipcode"
         android:inputType="number"
@@ -121,14 +125,14 @@
 
     <EditText
         android:id="@+id/dLReneworFirsteditTextText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_width="225dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="28dp"
         android:ems="10"
         android:hint="@string/first_or_renew"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.655"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -137,11 +141,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:fontFamily="@font/mulish_semi_bold"
         android:text="@string/next_page"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dLPostaleditTextTextPostalAddress"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
