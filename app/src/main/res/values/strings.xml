@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MobileAppDevProject</string>
+    <string name="app_name">GavaHub</string>
     <string name="app_login_introduction">Welcome to The E-Citizen Application</string>
     <string name="email_login">Enter your email address</string>
     <string name="password_login">Enter your password</string>
