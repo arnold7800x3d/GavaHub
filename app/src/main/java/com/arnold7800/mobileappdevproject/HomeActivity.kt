@@ -87,10 +87,10 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 
-    private fun replaceFragment(fragment: Fragment) {
+    /*private fun replaceFragment(fragment: Fragment) {
         val transaction = supportFragmentManager.beginTransaction()
         transaction.replace(R.id.fragment_container, fragment) // Ensure you have a FrameLayout with this id in your layout
         transaction.addToBackStack(null) // Add this transaction to the back stack
         transaction.commit()
-    }
+    }*/
 }
