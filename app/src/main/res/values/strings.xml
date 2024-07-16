@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name" translatable="false">GavaHub</string>
     <string name="app_login_introduction">Welcome to GavaHub</string>
     <string name="email_login">Enter your email address</string>
@@ -73,4 +73,10 @@
     <string name="kra_payment">To complete your application for the KRA pin, click the button below to pay Ksh 300 for the service</string>
     <string name="dLfrag2title">DRIVING LICENSE INSTRUCTION</string>
     <string name="dLthreeyear">Three-year license renewal @Ksh1400</string>
+    <string name="file1" tools:ignore="MissingTranslation">Upload applicant\'s National ID(PDF)</string>
+    <string name="file2" tools:ignore="MissingTranslation">Upload applicant\'s Birth Certificate(PDF)</string>
+    <string name="file3" tools:ignore="MissingTranslation">Upload parent\'s / guardian\'s National ID(PDF)</string>
+    <string name="file4" tools:ignore="MissingTranslation">Upload recommender\'s National ID(PDF)</string>
+    <string name="set_profile_pic" tools:ignore="MissingTranslation">Set Profile Picture</string>
+    <string name="save_profile" tools:ignore="MissingTranslation">Save Profile</string>
 </resources>
