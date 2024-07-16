@@ -4,97 +4,39 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 <androidx.constraintlayout.widget.ConstraintLayout
-    android:id="@+id/frameLayout8"
+    android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DrivingLicenseInstructionFragment">
-
+    tools:context=".KraPaymentFragment">
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/kraPaymenttextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="236dp"
+        android:gravity="center"
+        android:padding="10dp"
         android:fontFamily="@font/mulish_semi_bold"
         android:textColor="@color/black_1"
         android:textSize="20sp"
-        android:text="@string/dLfrag2title"
+        android:text="@string/kra_payment"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/dlInstructorNameeditTextText"
-        android:layout_width="300dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="40dp"
-        android:padding="3dp"
-        android:hint="@string/dLinstructorname"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <EditText
-        android:id="@+id/dLInstructorNTSANumbereditTextText2"
-        android:layout_width="300dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="32dp"
-        android:padding="3dp"
-        android:hint="@string/dLinstructorNTSANo"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dlInstructorNameeditTextText" />
-
-    <EditText
-        android:id="@+id/dLLicenseCategoryeditTextText3"
-        android:layout_width="300dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="32dp"
-        android:padding="3dp"
-        android:hint="@string/dLlicenseCategory"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dLSchoolAddresseditTextTextPostalAddress" />
-
-    <EditText
-        android:id="@+id/dLSchooleditTextText4"
-        android:layout_width="300dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="28dp"
-        android:padding="3dp"
-        android:hint="@string/dLSchool"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dLInstructorNTSANumbereditTextText2" />
-
-    <EditText
-        android:id="@+id/dLSchoolAddresseditTextTextPostalAddress"
-        android:layout_width="300dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="32dp"
-        android:padding="3dp"
-        android:hint="@string/dLAddress"
-        android:inputType="textPostalAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dLSchooleditTextText4" />
-
     <Button
-        android:id="@+id/dLPaymentbutton3"
+        android:id="@+id/kraPaybutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="84dp"
         android:fontFamily="@font/mulish_semi_bold"
         android:textColor="@color/white_1"
         android:textSize="18sp"
-        android:text="@string/next"
+        android:text="@string/payment_button"
         android:textAllCaps="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dLLicenseCategoryeditTextText3" />
+        app:layout_constraintTop_toBottomOf="@+id/kraPaymenttextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
