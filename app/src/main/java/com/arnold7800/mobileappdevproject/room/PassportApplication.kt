@@ -24,7 +24,7 @@ data class PassportApplication(
     val pob: String,
 
     @ColumnInfo(name = "zip_code")
-    val zipCode: Number,
+    val zipCode: Int,
 
     @ColumnInfo(name = "mother_name")
     val motherName: String,
@@ -33,10 +33,10 @@ data class PassportApplication(
     val motherIdNo: String,
 
     @ColumnInfo(name = "mother_dob")
-    val motherDob: Number,
+    val motherDob: Int,
 
     @ColumnInfo(name = "mother_dod")
-    val motherDod: Number,
+    val motherDod: Int,
 
     @ColumnInfo(name = "father_name")
     val fatherName: String,
@@ -45,10 +45,10 @@ data class PassportApplication(
     val fatherIdNo: String,
 
     @ColumnInfo(name = "father_dob")
-    val fatherDob: Number,
+    val fatherDob: Int,
 
     @ColumnInfo(name = "father_dod")
-    val fatherDod: Number,
+    val fatherDod: Int,
 
     @ColumnInfo(name = "guardian_name")
     val guardianName: String,
@@ -57,10 +57,10 @@ data class PassportApplication(
     val guardianIdNo: String,
 
     @ColumnInfo(name = "guardian_dob")
-    val guardianDob: Number,
+    val guardianDob: Int,
 
     @ColumnInfo(name = "guardian_dod")
-    val guardianDod: Number,
+    val guardianDod: Int,
 
     @ColumnInfo(name = "guardian_relationship")
     val guardianRelationship: String,
@@ -69,38 +69,32 @@ data class PassportApplication(
     val recommenderName: String,
 
     @ColumnInfo(name = "recommender_dob")
-    val recommenderDob: Number,
+    val recommenderDob: Int,
 
     @ColumnInfo(name = "recommender_phone_no")
-    val recommenderPhoneNo: Number,
+    val recommenderPhoneNo: Int,
 
     @ColumnInfo(name = "recommender_sex")
     val recommenderSex: String,
 
     @ColumnInfo(name = "recommender_idNo")
-    val recommenderIDNo: Number,
+    val recommenderIDNo: Int,
 
     @ColumnInfo(name = "next_of_kin_name")
     val nextOfKinName: String,
 
     @ColumnInfo(name = "next_of_kin_idNo")
-    val nextOfKinIdNo: Number,
+    val nextOfKinIdNo: Int,
 
     @ColumnInfo(name = "next_of_kin_dob")
-    val nextOfKinDob: Number,
+    val nextOfKinDob: Int,
 
     @ColumnInfo(name = "next_of_kin_sex")
     val nextOfKinSex: String,
 
     @ColumnInfo(name = "next_of_kin_phone_no")
-    val nextOfKinPhoneNo: Number,
+    val nextOfKinPhoneNo: Int,
 
     @ColumnInfo(name = "next_of_kin_relationship")
     val nextOfKinRelationship: String
-
-
-
-
-
-
 )

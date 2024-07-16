@@ -131,21 +131,21 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.599"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/busR4editTextText4"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.986" />
 
     <EditText
         android:id="@+id/busRegistrationNameeditTextText"
         android:layout_width="170dp"
         android:layout_height="47dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="56dp"
         android:ems="10"
         android:hint="@string/business_reg_business_name"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.622"
+        app:layout_constraintHorizontal_bias="0.564"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/busR4editTextText4" />
 </androidx.constraintlayout.widget.ConstraintLayout>

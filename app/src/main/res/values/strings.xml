@@ -22,7 +22,7 @@
     <string name="kra_title">KRA PIN APPLICATION\nPlease provide the details as required to apply for a KRA PIN</string>
     <string name="kra_residency">Resident or Non-resident?</string>
     <string name="kra_name">Enter your name</string>
-    <string name="kra_date">Date of Birth</string>
+    <string name="kra_date">Date of Birth(DDMMYY)</string>
     <string name="kra_email">Email Address</string>
     <string name="idNo">ID Number</string>
     <string name="kra_sex">Sex</string>
@@ -34,7 +34,6 @@
     <string name="payment_button">Pay Amount</string>
     <string name="bus_reg_title">BUSINESS NAME REGISTRATION\nPlease provide the details as required to apply for a Business Name</string>
     <string name="bus_ownerName">Owner Name</string>
-    <string name="bus_ownerID">ID Number</string>
     <string name="bus_name">Proposed Business Name</string>
     <string name="bus_address">Business Postal Address</string>
     <string name="bus_reg_payment">To complete your application for the Business Name registration, click the button below to pay Ksh 1000 for the service</string>
@@ -73,4 +72,10 @@
     <string name="passport50">B Series (50 pages) @ Ksh6050</string>
     <string name="passport66">C Series (66 pages) @ Ksh7550</string>
     <string name="business_reg_business_name">Business Name</string>
+    <string name="file1">Upload applicant\'s Birth Certificate (PDF)</string>
+    <string name="file2">Upload applicant\'s National ID (PDF)</string>
+    <string name="file3">Upload parent\'s or guardian\'s National ID (PDF)</string>
+    <string name="file4">Upload recommender\'s National ID (PDF)</string>
+    <string name="set_profile_pic">Set Profile Picture</string>
+    <string name="save_profile">Save Profile</string>
 </resources>

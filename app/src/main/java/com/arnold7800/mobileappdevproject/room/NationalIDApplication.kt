@@ -23,7 +23,7 @@ data class NationalIDApplication(
     val pob: String,
 
     @ColumnInfo(name = "zip_code")
-    val zipCode: Number,
+    val zipCode: Int,
 
     @ColumnInfo(name = "mother_name")
     val motherName: String,
@@ -32,10 +32,10 @@ data class NationalIDApplication(
     val motherIdNo: String,
 
     @ColumnInfo(name = "mother_dob")
-    val motherDob: Number,
+    val motherDob: Int,
 
     @ColumnInfo(name = "mother_dod")
-    val motherDod: Number,
+    val motherDod: Int,
 
     @ColumnInfo(name = "father_name")
     val fatherName: String,
@@ -44,10 +44,10 @@ data class NationalIDApplication(
     val fatherIdNo: String,
 
     @ColumnInfo(name = "father_dob")
-    val fatherDob: Number,
+    val fatherDob: Int,
 
     @ColumnInfo(name = "father_dod")
-    val fatherDod: Number,
+    val fatherDod: Int,
 
     @ColumnInfo(name = "guardian_name")
     val guardianName: String,
@@ -56,10 +56,10 @@ data class NationalIDApplication(
     val guardianIdNo: String,
 
     @ColumnInfo(name = "guardian_dob")
-    val guardianDob: Number,
+    val guardianDob: Int,
 
     @ColumnInfo(name = "guardian_dod")
-    val guardianDod: Number,
+    val guardianDod: Int,
 
     @ColumnInfo(name = "guardian_relationship")
     val guardianRelationship: String

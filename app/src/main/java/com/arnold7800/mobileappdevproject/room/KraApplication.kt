@@ -20,10 +20,10 @@ data class KraApplication(
     val email: String,
 
     @ColumnInfo(name = "applicant_dob")
-    val dob: Number,
+    val dob: Int,
 
     @ColumnInfo(name = "applicant_idNo")
-    val idNo: Number,
+    val idNo: Int,
 
     @ColumnInfo(name = "applicant_sex")
     val sex: String,

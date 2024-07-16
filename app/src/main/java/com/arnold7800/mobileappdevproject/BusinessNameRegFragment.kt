@@ -6,8 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import com.arnold7800.mobileappdevproject.databinding.FragmentBusinessNameRegBinding
+import com.arnold7800.mobileappdevproject.viewmodel.BusinessRegistrationViewModel
 
 class BusinessNameRegFragment : Fragment() {
     private lateinit var binding: FragmentBusinessNameRegBinding
