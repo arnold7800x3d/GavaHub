@@ -65,6 +65,7 @@ class BusinessRegFragment : Fragment() {
 
     }
 
+    //ensure at least one applicant
     private fun inputCheck(applicantAName: String, businessName: String): Boolean {
         return !(TextUtils.isEmpty(applicantAName) && TextUtils.isEmpty(businessName))
     }

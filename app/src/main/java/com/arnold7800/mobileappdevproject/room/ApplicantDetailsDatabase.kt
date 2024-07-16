@@ -12,6 +12,7 @@ abstract class ApplicantDetailsDatabase : RoomDatabase(){
     abstract fun nationalIDApplicationDAO(): NationalIDDAO
     abstract fun kraApplicationDAO(): KraDAO
     abstract fun drivingLicenseApplicationDAO(): DrivingLicenseDAO
+    abstract fun drivingLicenseInstructionDAO(): DrivingLicenseInstructionDAO
     abstract fun businessNameRegistrationApplicationDAO(): BusinessNameRegistrationDAO
     abstract fun businessRegistrationApplicationDAO(): BusinessRegistrationDAO
 

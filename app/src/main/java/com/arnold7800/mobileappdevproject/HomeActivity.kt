@@ -6,6 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.fragment.app.Fragment
 import com.arnold7800.mobileappdevproject.databinding.ActivityHomeBinding
 import com.arnold7800.mobileappdevproject.databinding.FragmentKraPaymentBinding
 
@@ -17,6 +18,31 @@ class HomeActivity : AppCompatActivity() {
 
         binding = ActivityHomeBinding.inflate(layoutInflater) // Initialize binding here
         setContentView(binding.root)
+
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, ProfileFragment()) // Default fragment
+                .commit()
+        }
+
+        binding.bottomNavigation.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.profile -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, ProfileFragment())
+                        .commit()
+                    true
+                }
+                R.id.settings -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, SettingsFragment())
+                        .commit()
+                    true
+                }
+                else -> false
+            }
+        }
+
 
         //passport button
         binding.passportButton.setOnClickListener(){
@@ -59,5 +85,12 @@ class HomeActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+    }
+
+    private fun replaceFragment(fragment: Fragment) {
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.fragment_container, fragment) // Ensure you have a FrameLayout with this id in your layout
+        transaction.addToBackStack(null) // Add this transaction to the back stack
+        transaction.commit()
     }
 }

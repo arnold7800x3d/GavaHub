@@ -19,10 +19,10 @@ class BusinessRegistrationViewModel(application: Application): AndroidViewModel(
         repository = BusinessRegistrationRepository(busRegDao)
     }
 
-    fun insertApplicantDetails(application: BusinessRegistrationApplication,) {
-        viewModelScope.launch(Dispatchers.IO) {Log.d("BusinessRegViewModel", "Inserting: $application") // Log before insertion
+    fun insertApplicantDetails(application: BusinessRegistrationApplication) {
+        viewModelScope.launch(Dispatchers.IO) {Log.d("BusinessRegViewModel", "Inserting: $application") // logging before inserting data
             repository.insertApplicantsDetails(application)
-            Log.d("BusinessRegViewModel", "Inserted successfully") // Log after insertion
+            Log.d("BusinessRegViewModel", "Inserted successfully") // log after inserting data
         }
     }
 }

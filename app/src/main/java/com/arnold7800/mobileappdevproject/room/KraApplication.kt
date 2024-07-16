@@ -4,7 +4,7 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "KRAApplications")
+@Entity(tableName = "kra_applications_details")
 data class KraApplication(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "applicant_id")
@@ -20,7 +20,7 @@ data class KraApplication(
     val email: String,
 
     @ColumnInfo(name = "applicant_dob")
-    val dob: Int,
+    val dob: String,
 
     @ColumnInfo(name = "applicant_idNo")
     val idNo: Int,
@@ -29,7 +29,7 @@ data class KraApplication(
     val sex: String,
 
     @ColumnInfo(name = "zip_code")
-    val zipCode: String,
+    val zipCode: Int,
 
     @ColumnInfo(name = "applicant_postal_address")
     val postalAddress: String,

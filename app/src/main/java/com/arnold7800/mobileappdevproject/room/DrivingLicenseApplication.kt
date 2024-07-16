@@ -4,7 +4,7 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "DrivingLicenseApplications")
+@Entity(tableName = "driving_license_applications")
 data class DrivingLicenseApplication(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "applicant_id")
@@ -36,20 +36,4 @@ data class DrivingLicenseApplication(
 
     @ColumnInfo(name = "applicant_postal_address")
     val applicantPostalAddress: String,
-
-    @ColumnInfo(name = "driving_instructor_name")
-    val drivingInstructorName: String,
-
-    @ColumnInfo(name = "driving_instructor_ntsaNO")
-    val drivingInstructorNtsaNo: Int,
-
-    @ColumnInfo(name = "driving_school")
-    val drivingSchool: String,
-
-    @ColumnInfo(name = "driving_school_address")
-    val drivingSchoolAddress: String,
-
-    @ColumnInfo(name = "dl_category")
-    val dlCategory: String
-
 )

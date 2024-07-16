@@ -4,7 +4,7 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "BusinessNameRegistrationApplications")
+@Entity(tableName = "business_name_registration_details")
 data class BusinessNameRegistrationApplication(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "owners_id")
@@ -20,19 +20,19 @@ data class BusinessNameRegistrationApplication(
     val ownerB: String,
 
     @ColumnInfo(name = "owner_B_IdNo")
-    val ownerBIdNo: String,
+    val ownerBIdNo: Int,
 
     @ColumnInfo(name = "owner_C")
     val ownerC: String,
 
     @ColumnInfo(name = "owner_CIdNo")
-    val ownerCIdNo: String,
+    val ownerCIdNo: Int,
 
     @ColumnInfo(name = "owner_D")
     val ownerD: String,
 
     @ColumnInfo(name = "owner_DIdNo")
-    val ownerDIdNo: String,
+    val ownerDIdNo: Int,
 
     @ColumnInfo(name = "business_name")
     val businessName: String,
