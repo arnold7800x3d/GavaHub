@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import com.arnold7800.mobileappdevproject.databinding.FragmentDrivingLicenseBinding
 import com.arnold7800.mobileappdevproject.room.DrivingLicenseApplication
@@ -15,15 +16,18 @@ import com.arnold7800.mobileappdevproject.viewmodel.DrivingLicenseViewModel
 
 class DrivingLicenseFragment : Fragment() {
 
-   private lateinit var binding: FragmentDrivingLicenseBinding
-   private lateinit var drivingLicenseViewModel: DrivingLicenseViewModel
+    private lateinit var binding: FragmentDrivingLicenseBinding
+    private lateinit var drivingLicenseViewModel: DrivingLicenseViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_driving_license, container, false)
+        binding =
+            DataBindingUtil.inflate(inflater, R.layout.fragment_driving_license, container, false)
+
+        drivingLicenseViewModel = ViewModelProvider(this).get(DrivingLicenseViewModel::class.java)
 
         //on click event
         binding.dLNextbutton.setOnClickListener {
@@ -46,15 +50,30 @@ class DrivingLicenseFragment : Fragment() {
         val zipCode = binding.dLZipeditTextNumber2.text.toString().toInt()
         val applicantAddress = binding.dLZipeditTextNumber2.text.toString()
 
-        if (inputCheck(applicantName,applicantEmail)) {
-            val dLApplicants = DrivingLicenseApplication(0, applicationNature, applicantName, applicantPhone, applicantEmail, applicantDob, applicantIdNo, applicantSex, zipCode, applicantAddress, drivingInstructorName = "", drivingInstructorNtsaNo = 0, drivingSchool = "", drivingSchoolAddress = "", dlCategory = "")
+        if (inputCheck(applicantName, applicantEmail)) {
+            val dLApplicants = DrivingLicenseApplication(
+                0,
+                applicationNature,
+                applicantName,
+                applicantPhone,
+                applicantEmail,
+                applicantDob,
+                applicantIdNo,
+                applicantSex,
+                zipCode,
+                applicantAddress,
+            )
 
             drivingLicenseViewModel.insertApplicantDetails(dLApplicants)
-            Toast.makeText(requireContext(), "Details successfully added!!", Toast.LENGTH_LONG ).show()
+            Toast.makeText(requireContext(), "Details successfully added!!", Toast.LENGTH_LONG)
+                .show()
             onInsertComplete(binding.root)
-        }
-        else {
-            Toast.makeText(requireContext(), "There was an error capturing your details.", Toast.LENGTH_LONG).show()
+        } else {
+            Toast.makeText(
+                requireContext(),
+                "There was an error capturing your details.",
+                Toast.LENGTH_LONG
+            ).show()
         }
     }
 

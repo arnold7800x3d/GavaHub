@@ -25,6 +25,7 @@ class BusinessNameRegFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_business_name_reg, container, false)
 
+        businessNameViewModel = ViewModelProvider(this).get(BusinessNameRegistrationViewModel::class.java)
         //the click event on button
         binding.businessNameRegbutton.setOnClickListener {
             insertDataToDatabase {

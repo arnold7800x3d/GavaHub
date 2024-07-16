@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.DataBindingUtil.inflate
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import com.arnold7800.mobileappdevproject.databinding.FragmentKraBinding
 import com.arnold7800.mobileappdevproject.room.KraApplication
@@ -26,6 +27,7 @@ class KraFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_kra, container, false)
 
+        kraViewModel = ViewModelProvider(this).get(KraViewModel::class.java)
         //handle click event on button
         binding.kraNextbutton.setOnClickListener {
             insertDataToDatabase {
