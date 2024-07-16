@@ -1,6 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme -->
+    <style name= "Base.Theme.GavaHub" parent="Theme.MaterialComponents.Light.DarkActionBar">
 
+    </style>
     <!-- Custom button style -->
 
     <!-- Shape appearance for medium components -->

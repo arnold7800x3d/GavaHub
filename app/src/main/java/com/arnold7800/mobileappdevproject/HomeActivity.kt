@@ -2,10 +2,13 @@ package com.arnold7800.mobileappdevproject
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+//import android.widget.Toolbar
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import com.arnold7800.mobileappdevproject.databinding.ActivityHomeBinding
 import com.arnold7800.mobileappdevproject.databinding.FragmentKraPaymentBinding
@@ -18,6 +21,12 @@ class HomeActivity : AppCompatActivity() {
 
         binding = ActivityHomeBinding.inflate(layoutInflater) // Initialize binding here
         setContentView(binding.root)
+
+        val toolbar: Toolbar ?= findViewById(R.id.toolbar)
+        setSupportActionBar(toolbar)
+
+        supportActionBar?.title = "GavaHub"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         /*if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
@@ -85,6 +94,11 @@ class HomeActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.gavahub_menu, menu)
+        return true
     }
 
     /*private fun replaceFragment(fragment: Fragment) {
