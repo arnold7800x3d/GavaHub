@@ -19,7 +19,7 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater) // Initialize binding here
         setContentView(binding.root)
 
-        if (savedInstanceState == null) {
+        /*if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, ProfileFragment()) // Default fragment
                 .commit()
@@ -41,7 +41,7 @@ class HomeActivity : AppCompatActivity() {
                 }
                 else -> false
             }
-        }
+        }*/
 
 
         //passport button
