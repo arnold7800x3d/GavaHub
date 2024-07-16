@@ -4,7 +4,7 @@
     <string name="email_login">Enter your email address</string>
     <string name="password_login">Enter your password</string>
     <string name="login">Login</string>
-    <string name="create_account">Don\'t have an account? Click below to create one</string>
+    <string name="create_account">Don't have an account? Click below to create one</string>
     <string name="create">Create Account</string>
     <string name="create_name">Full Name (as in Birth Certificate)</string>
     <string name="create_email">Enter your email address</string>
