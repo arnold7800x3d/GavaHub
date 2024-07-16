@@ -5,7 +5,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [PassportApplication::class, NationalIDApplication::class, KraApplication::class, DrivingLicenseApplication::class, BusinessNameRegistrationApplication::class, BusinessRegistrationApplication::class], version = 3, exportSchema = false)
+@Database(entities = [PassportApplication::class, NationalIDApplication::class, KraApplication::class, DrivingLicenseApplication::class, BusinessNameRegistrationApplication::class, BusinessRegistrationApplication::class,  DrivingLicenseInstructionApplication::class], version = 3, exportSchema = false)
 abstract class ApplicantDetailsDatabase : RoomDatabase(){
 
     abstract fun passportApplicationDAO(): PassportDAO
