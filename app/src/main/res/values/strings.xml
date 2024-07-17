@@ -81,4 +81,7 @@
     <string name="save_profile" tools:ignore="MissingTranslation">Save Profile</string>
     <string name="logout" tools:ignore="MissingTranslation">Thank you for using GavaHub. We hope to see you soon</string>
     <string name="logoutButton" tools:ignore="MissingTranslation">Proceed to logout</string>
+    <string name="welcome" tools:ignore="MissingTranslation">Welcome to GavaHub, your home for easy and reliable access to government services</string>
+    <string name="applicationInfo" tools:ignore="MissingTranslation">NB: Kindly fill in all the fields that apply. For numeric fields that do not apply, enter 001 and for non-numeric fields, enter Not Applicable</string>
+    <string name="website" tools:ignore="MissingTranslation">Visit our website</string>
 </resources>

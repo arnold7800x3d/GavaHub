@@ -68,7 +68,9 @@ class DrivingLicenseFragment : Fragment() {
             drivingLicenseViewModel.insertApplicantDetails(dLApplicants)
             Toast.makeText(requireContext(), "Details successfully added!!", Toast.LENGTH_LONG)
                 .show()
-            onInsertComplete(binding.root)
+            binding.root.postDelayed({
+                onInsertComplete(binding.root)
+            }, 1000)
         } else {
             Toast.makeText(
                 requireContext(),

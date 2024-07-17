@@ -52,8 +52,11 @@ class KraFragment : Fragment() {
             val kraApplicants = KraApplication(0, applicationNature, applicantName, applicantEmail, applicantDob, applicantIdNo, applicantSex, zipCode, applicantAddress, pinType)
 
             kraViewModel.insertApplicantDetails(kraApplicants)
-            Toast.makeText(requireContext(), "Details successfully added!!", Toast.LENGTH_LONG ).show()
-            onInsertComplete(binding.root)
+            Toast.makeText(requireContext(), "Details successfully added!!", Toast.LENGTH_LONG)
+                .show()
+            binding.root.postDelayed({
+                onInsertComplete(binding.root)
+            }, 1000)
         } else {
             Toast.makeText(requireContext(), "There was an error capturing your details.", Toast.LENGTH_LONG).show()
         }

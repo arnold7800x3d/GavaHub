@@ -1,5 +1,7 @@
 package com.arnold7800.mobileappdevproject.ui.fragments
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -40,6 +42,12 @@ class HomeFragment : Fragment() {
 
         binding.businessRegButton.setOnClickListener {
             it.findNavController().navigate(R.id.action_homeFragment_to_businessRegFragment)
+        }
+
+        binding.websitebutton3.setOnClickListener(){
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.setData(Uri.parse("https://accounts.ecitizen.go.ke/en"))
+            startActivity(intent)
         }
 
         return binding.root
