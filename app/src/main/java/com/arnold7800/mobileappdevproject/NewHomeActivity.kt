@@ -50,14 +50,14 @@ class NewHomeActivity : AppCompatActivity() {
             }
             R.id.profile -> {
                 //ProfileFragment
-                findNavController(R.id.nav_host_fragment).navigate(R.id.action_homeFragment_to_profileFragment) // Replace with your action ID
+                findNavController(R.id.nav_host_fragment).navigate(R.id.action_homeFragment_to_profileFragment)
                 true
             }
-           /* R.id.settings -> {
+           R.id.settings -> {
                 //SettingsFragment
-                findNavController(R.id.nav_host_fragment).navigate(R.id.action_to_settingsFragment) // Replace with your action ID
+                findNavController(R.id.nav_host_fragment).navigate(R.id.action_homeFragment_to_settingsFragment)
                 true
-            }*/
+            }
             R.id.logout -> {
                 findNavController(R.id.nav_host_fragment).navigate(R.id.action_homeFragment_to_logoutFragment)
                 true

@@ -82,7 +82,7 @@
     <string name="logout" tools:ignore="MissingTranslation">Thank you for using GavaHub. We hope to see you soon.</string>
     <string name="logoutButton" tools:ignore="MissingTranslation">Proceed to logout</string>
     <string name="welcome" tools:ignore="MissingTranslation">Welcome to GavaHub, your home for easy and reliable access to government services</string>
-    <string name="applicationInfo" tools:ignore="MissingTranslation">NB: ALL FIELDS MUST BE FILLED!! Kindly fill in all the fields that apply. For fields that do not apply, enter \'Not Applicable\'</string>
+    <string name="applicationInfo" tools:ignore="MissingTranslation">NB: ALL FIELDS MUST BE FILLED!! Kindly fill in all the fields that apply. For fields that do not apply, enter \'Not Applicable\' or 00 for numeric fields</string>
     <string name="website" tools:ignore="MissingTranslation">Visit our website</string>
     <string name="profile">Profile</string>
     <string name="settings">Settings</string>

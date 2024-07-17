@@ -34,6 +34,9 @@
         <action
             android:id="@+id/action_homeFragment_to_logoutFragment"
             app:destination="@id/logoutFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
     </fragment>
     <fragment
         android:id="@+id/businessNameRegFragment"
@@ -165,7 +168,7 @@
         android:label="PassportPaymentFragment" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.arnold7800.mobileappdevproject.ui.fragments.ProfileFragment"
+        android:name="com.arnold7800.mobileappdevproject.ProfileFragment"
         android:label="ProfileFragment" />
     <fragment
         android:id="@+id/logoutFragment"
@@ -179,4 +182,9 @@
         android:id="@+id/mainActivity"
         android:name="com.arnold7800.mobileappdevproject.MainActivity"
         android:label="MainActivity" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.arnold7800.mobileappdevproject.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
 </navigation>
