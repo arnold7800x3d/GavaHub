@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
                 } else {
                     Toast.makeText(
                         this,
-                        "Authentication Failed",
+                        "Authentication Failed, Create an account to login",
                         Toast.LENGTH_LONG
                     ).show()
 
@@ -69,17 +69,8 @@ class MainActivity : AppCompatActivity() {
             }
     }
 
-        override fun onStart() {
-            super.onStart()
-            val currentUser = auth.currentUser
-
-            if (currentUser != null) {
-                goToHomeActivity()
-            }
-        }
-
-        private fun goToHomeActivity() {
-            var intent = Intent(this, HomeActivity::class.java)
-            startActivity(intent)
-        }
+    private fun goToHomeActivity() {
+        var intent = Intent(this, NewHomeActivity::class.java)
+        startActivity(intent)
+    }
 }

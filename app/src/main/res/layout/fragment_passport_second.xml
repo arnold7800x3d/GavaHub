@@ -7,7 +7,7 @@
     android:id="@+id/frameLayout15"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PassportSecondFragment">
+    tools:context=".ui.fragments.PassportSecondFragment">
 
     <TextView
         android:id="@+id/passport2TitletextView7"

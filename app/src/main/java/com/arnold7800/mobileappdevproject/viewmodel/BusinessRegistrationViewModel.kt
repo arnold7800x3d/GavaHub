@@ -4,9 +4,9 @@ import android.app.Application
 import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.arnold7800.mobileappdevproject.room.ApplicantDetailsDatabase
-import com.arnold7800.mobileappdevproject.room.BusinessRegistrationApplication
-import com.arnold7800.mobileappdevproject.room.BusinessRegistrationRepository
+import com.arnold7800.mobileappdevproject.room.gavahubdatabase.ApplicantDetailsDatabase
+import com.arnold7800.mobileappdevproject.room.entityclasses.BusinessRegistrationApplication
+import com.arnold7800.mobileappdevproject.room.repository.BusinessRegistrationRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

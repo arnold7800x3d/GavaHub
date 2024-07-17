@@ -79,4 +79,6 @@
     <string name="file4" tools:ignore="MissingTranslation">Upload recommender\'s National ID(PDF)</string>
     <string name="set_profile_pic" tools:ignore="MissingTranslation">Set Profile Picture</string>
     <string name="save_profile" tools:ignore="MissingTranslation">Save Profile</string>
+    <string name="logout" tools:ignore="MissingTranslation">Thank you for using GavaHub. We hope to see you soon</string>
+    <string name="logoutButton" tools:ignore="MissingTranslation">Proceed to logout</string>
 </resources>

@@ -7,7 +7,7 @@
         android:id="@+id/frameLayout18"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".PassportFileUploadFragment">
+        tools:context=".ui.fragments.PassportFileUploadFragment">
 
         <TextView
             android:id="@+id/passportFileUploadtextView7"

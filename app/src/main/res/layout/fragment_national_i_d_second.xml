@@ -7,7 +7,7 @@
     android:id="@+id/frameLayout11"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NationalIDSecondFragment">
+    tools:context=".ui.fragments.NationalIDSecondFragment">
 
 
     <TextView
@@ -83,11 +83,11 @@
         android:layout_width="167dp"
         android:layout_height="43dp"
         android:layout_marginTop="20dp"
-        android:padding="3dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:hint="@string/id_dod"
         android:inputType="date"
+        android:padding="3dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id2ID1editTextNumber2" />
 

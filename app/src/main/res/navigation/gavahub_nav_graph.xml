@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gavahub_nav_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.arnold7800.mobileappdevproject.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_businessNameRegFragment"
+            app:destination="@id/businessNameRegFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_businessRegFragment"
+            app:destination="@id/businessRegFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_drivingLicenseFragment"
+            app:destination="@id/drivingLicenseFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_kraFragment"
+            app:destination="@id/kraFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_nationalIDFragment"
+            app:destination="@id/nationalIDFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_passportFragment"
+            app:destination="@id/passportFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_logoutFragment"
+            app:destination="@id/logoutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/businessNameRegFragment"
+        android:name="com.arnold7800.mobileappdevproject.ui.fragments.BusinessNameRegFragment"
+        android:label="BusinessNameRegFragment" >
+        <action
+            android:id="@+id/action_businessNameRegFragment_to_businessNameRegPaymentFragment"
+            app:destination="@id/businessNameRegPaymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/businessNameRegPaymentFragment"
+        android:name="com.arnold7800.mobileappdevproject.ui.fragments.BusinessNameRegPaymentFragment"
+        android:label="BusinessNameRegPaymentFragment" />
+    <fragment
+        android:id="@+id/businessRegFragment"
+        android:name="com.arnold7800.mobileappdevproject.ui.fragments.BusinessRegFragment"
+        android:label="BusinessRegFragment" >
+        <action
+            android:id="@+id/action_businessRegFragment_to_businessRegFileUploadFragment"
+            app:destination="@id/businessRegFileUploadFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/businessRegPaymentFragment"
+        android:name="com.arnold7800.mobileappdevproject.ui.fragments.BusinessRegPaymentFragment"
+        android:label="BusinessRegPaymentFragment" />
+    <fragment
+        android:id="@+id/businessRegFileUploadFragment"
+        android:name="com.arnold7800.mobileappdevproject.ui.fragments.BusinessRegFileUploadFragment"
+        android:label="BusinessRegFileUploadFragment" >
+        <action
+            android:id="@+id/action_businessRegFileUploadFragment_to_businessRegPaymentFragment"
+            app:destination="@id/businessRegPaymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drivingLicenseFragment"
+        android:name="com.arnold7800.mobileappdevproject.ui.fragments.DrivingLicenseFragment"
+        android:label="DrivingLicenseFragment" >
+        <action
+            android:id="@+id/action_drivingLicenseFragment_to_drivingLicenseInstructionFragment"
+            app:destination="@id/drivingLicenseInstructionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drivingLicenseInstructionFragment"
+        android:name="com.arnold7800.mobileappdevproject.ui.fragments.DrivingLicenseInstructionFragment"
+        android:label="DrivingLicenseInstructionFragment" >
+        <action
+            android:id="@+id/action_drivingLicenseInstructionFragment_to_drivingLicensePaymentFragment"
+            app:destination="@id/drivingLicensePaymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drivingLicensePaymentFragment"
+        android:name="com.arnold7800.mobileappdevproject.ui.fragments.DrivingLicensePaymentFragment"
+        android:label="DrivingLicensePaymentFragment" />
+    <fragment
+        android:id="@+id/kraFragment"
+        android:name="com.arnold7800.mobileappdevproject.ui.fragments.KraFragment"
+        android:label="KraFragment" >
+        <action
+            android:id="@+id/action_kraFragment_to_kraPaymentFragment"
+            app:destination="@id/kraPaymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kraPaymentFragment"
+        android:name="com.arnold7800.mobileappdevproject.ui.fragments.KraPaymentFragment"
+        android:label="KraPaymentFragment" />
+    <fragment
+        android:id="@+id/nationalIDFragment"
+        android:name="com.arnold7800.mobileappdevproject.ui.fragments.NationalIDFragment"
+        android:label="NationalIDFragment" >
+        <action
+            android:id="@+id/action_nationalIDFragment_to_nationalIDSecondFragment"
+            app:destination="@id/nationalIDSecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nationalIDSecondFragment"
+        android:name="com.arnold7800.mobileappdevproject.ui.fragments.NationalIDSecondFragment"
+        android:label="NationalIDSecondFragment" >
+        <action
+            android:id="@+id/action_nationalIDSecondFragment_to_nationalIDPaymentFragment"
+            app:destination="@id/nationalIDPaymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nationalIDPaymentFragment"
+        android:name="com.arnold7800.mobileappdevproject.ui.fragments.NationalIDPaymentFragment"
+        android:label="NationalIDPaymentFragment" />
+    <fragment
+        android:id="@+id/passportFragment"
+        android:name="com.arnold7800.mobileappdevproject.ui.fragments.PassportFragment"
+        android:label="PassportFragment" >
+        <action
+            android:id="@+id/action_passportFragment_to_passportSecondFragment"
+            app:destination="@id/passportSecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passportSecondFragment"
+        android:name="com.arnold7800.mobileappdevproject.ui.fragments.PassportSecondFragment"
+        android:label="PassportSecondFragment" >
+        <action
+            android:id="@+id/action_passportSecondFragment_to_passportThirdFragment"
+            app:destination="@id/passportThirdFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passportThirdFragment"
+        android:name="com.arnold7800.mobileappdevproject.ui.fragments.PassportThirdFragment"
+        android:label="PassportThirdFragment" >
+        <action
+            android:id="@+id/action_passportThirdFragment_to_passportFourthFragment"
+            app:destination="@id/passportFourthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passportFourthFragment"
+        android:name="com.arnold7800.mobileappdevproject.ui.fragments.PassportFourthFragment"
+        android:label="PassportFourthFragment" >
+        <action
+            android:id="@+id/action_passportFourthFragment_to_passportFileUploadFragment"
+            app:destination="@id/passportFileUploadFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passportFileUploadFragment"
+        android:name="com.arnold7800.mobileappdevproject.ui.fragments.PassportFileUploadFragment"
+        android:label="PassportFileUploadFragment" >
+        <action
+            android:id="@+id/action_passportFileUploadFragment_to_passportPaymentFragment"
+            app:destination="@id/passportPaymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passportPaymentFragment"
+        android:name="com.arnold7800.mobileappdevproject.ui.fragments.PassportPaymentFragment"
+        android:label="PassportPaymentFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.arnold7800.mobileappdevproject.ui.fragments.ProfileFragment"
+        android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/logoutFragment"
+        android:name="com.arnold7800.mobileappdevproject.ui.fragments.LogoutFragment"
+        android:label="LogoutFragment" >
+        <action
+            android:id="@+id/action_logoutFragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.arnold7800.mobileappdevproject.MainActivity"
+        android:label="MainActivity" />
+</navigation>
