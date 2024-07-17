@@ -10,25 +10,37 @@
         android:orientation="vertical"
         android:padding="16dp">
 
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:fontFamily="@font/mulish_bold"
+            android:text="@string/profile"
+            android:textColor="@color/gray_1"
+            android:textSize="30sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="16dp" />
+
         <ImageView
             android:id="@+id/profileImageView"
             android:layout_width="123dp"
             android:layout_height="125dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="52dp"
+            android:contentDescription="@string/user_icon"
             android:src="@drawable/default_profile"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.062"
+            app:layout_constraintHorizontal_bias="0.089"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
         <Button
             android:id="@+id/setProfileImageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="76dp"
+            android:layout_marginTop="72dp"
             android:text="@string/set_profile_pic"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.448"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/profileImageView" />
 
@@ -36,9 +48,12 @@
             android:id="@+id/nameEditText"
             android:layout_width="148dp"
             android:layout_height="33dp"
-            android:layout_marginTop="64dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginTop="172dp"
+            android:padding="3dp"
+            android:layout_marginEnd="40dp"
             android:hint="@string/kra_name"
+            android:inputType="text"
+            android:autofillHints="name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,11 +61,23 @@
             android:id="@+id/saveProfileButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="60dp"
             android:text="@string/save_profile"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.45"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/setProfileImageButton" />
+
+        <TextView
+            android:id="@+id/logout_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="112dp"
+            android:fontFamily="@font/mulish_semi_bold"
+            android:text="@string/app_rights"
+            android:textColor="@color/gray_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/saveProfileButton" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

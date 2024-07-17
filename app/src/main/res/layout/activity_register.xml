@@ -9,25 +9,42 @@
     android:layout_height="match_parent"
     tools:context=".Register">
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/mulish_semi_bold"
+        android:gravity="center"
+        android:text="@string/insert_details"
+        android:textColor="@color/black_1"
+        android:textSize="20sp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
     <EditText
         android:id="@+id/createNameTextView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="212dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="41dp"
         android:ems="15"
         android:hint="@string/create_name"
+        android:autofillHints="name"
         android:inputType="text"
+        android:padding="3dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
         android:id="@+id/createEmailTextView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="41dp"
+        android:padding="3dp"
         android:ems="15"
+        android:autofillHints="emailAddress"
         android:hint="@string/create_email"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,10 +55,12 @@
     <EditText
         android:id="@+id/createPhoneNumberTextView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="41dp"
         android:ems="15"
+        android:padding="3dp"
         android:hint="@string/create_phone"
+        android:autofillHints=""
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -51,9 +70,11 @@
     <EditText
         android:id="@+id/createIDNumberTextView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="41dp"
         android:ems="15"
+        android:autofillHints=""
+        android:padding="3dp"
         android:hint="@string/create_id"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,10 +85,12 @@
     <EditText
         android:id="@+id/createPasswordTextView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="41dp"
         android:ems="15"
+        android:autofillHints="password"
         android:hint="@string/create_password"
+        android:padding="3dp"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -80,6 +103,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/register"
+        android:textColor="@color/white_1"
+        android:fontFamily="@font/mulish_semi_bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/createPasswordTextView" />

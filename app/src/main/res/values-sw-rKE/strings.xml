@@ -73,4 +73,24 @@
     <string name="passport50">Mfululizo B (kurasa 50) @ Ksh6050</string>
     <string name="passport66">Mfululizo C (kurasa 66) @ Ksh7550</string>
     <string name="business_reg_business_name">Jina la Biashara</string>
+    <string name="file1">Pakia Kitambulisho cha Kitaifa cha mwombaji (PDF)</string>
+    <string name="file2">Pakia Cheti cha Kuzaliwa cha mwombaji (PDF)</string>
+    <string name="file3">Pakia Kitambulisho cha Taifa cha mzazi/mlezi(PDF)</string>
+    <string name="file4">Pakia Kitambulisho cha Kitaifa cha anayependekeza(PDF)</string>
+    <string name="set_profile_pic">Weka Picha ya Profaili</string>
+    <string name="save_profile">Hifadhi Profaili</string>
+    <string name="logout">Asante kwa kutumia GavaHub. Tunatumai kukuona hivi karibuni.</string>
+    <string name="logoutButton">Endelea kuondoka</string>
+    <string name="welcome">Karibu kwenye GavaHub, jinsi ya ufikiaji rahisi na wa kuaminika kwa huduma za serikali</string>
+    <string name="applicationInfo">NB: VIWANJA VYOTE LAZIMA VIJAZE!! Tafadhali jaza sehemu zote zinazotumika. Kwa sehemu ambazo hazitumiki, weka \'Hazitumiki\'</string>
+    <string name="website">Tembelea tovuti yetu</string>
+    <string name="profile">Profaili</string>
+    <string name="settings">Mipangilio</string>
+    <string name="logout_message">Kuondoka</string>
+    <string name="enable_notifications">Wezesha Arifa</string>
+    <string name="save_settings">Hifadhi</string>
+    <string name="notification">Je, unataka kusikia kutoka kwetu?</string>
+    <string name="language_settings">Chagua lugha unayopendelea hapa chini</string>
+    <string name="logout_page">Ukurasa wa Kutoka</string>
+    <string name="insert_details">Tafadhali ingiza maelezo yanayohitajika katika visanduku vilivyo hapa chini</string>
 </resources>

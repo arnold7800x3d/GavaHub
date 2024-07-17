@@ -9,93 +9,109 @@
         android:layout_height="match_parent"
         tools:context=".ui.fragments.HomeFragment">
 
+
         <TextView
             android:id="@+id/homeTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="188dp"
             android:fontFamily="@font/mulish_semi_bold"
             android:gravity="center"
             android:padding="10dp"
             android:text="@string/info_home"
-            android:textSize="20sp"
+            android:textColor="@color/gray_1"
+            android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.517"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/passportButton"
-            android:layout_width="109dp"
-            android:layout_height="81dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="44dp"
+            android:layout_width="157dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/gold_1"
             android:fontFamily="@font/mulish_semi_bold"
+            android:textColor="@color/white_1"
             android:text="@string/passport_button"
-            app:layout_constraintEnd_toStartOf="@+id/idButton"
-            app:layout_constraintHorizontal_bias="0.347"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.905"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/homeTextView" />
 
         <Button
             android:id="@+id/idButton"
-            android:layout_width="109dp"
-            android:layout_height="81dp"
-            android:layout_marginTop="44dp"
-            android:text="@string/id_button"
+            android:layout_width="157dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white_1"
+            android:backgroundTint="@color/gold_1"
             android:fontFamily="@font/mulish_semi_bold"
+            android:text="@string/id_button"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.114"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/homeTextView" />
 
         <Button
             android:id="@+id/kraButton"
-            android:layout_width="109dp"
-            android:layout_height="81dp"
-            android:layout_marginTop="44dp"
-            android:layout_marginEnd="28dp"
+            android:layout_width="157dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="22dp"
+            android:backgroundTint="@color/gold_1"
             android:fontFamily="@font/mulish_semi_bold"
             android:text="@string/kra_button"
+            android:textColor="@color/white_1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/idButton"
-            app:layout_constraintTop_toBottomOf="@+id/homeTextView" />
-
-        <Button
-            android:id="@+id/dLButton"
-            android:layout_width="127dp"
-            android:layout_height="87dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="36dp"
-            android:fontFamily="@font/mulish_semi_bold"
-            android:text="@string/dL_button"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/dLButton"
             app:layout_constraintTop_toBottomOf="@+id/passportButton" />
 
         <Button
-            android:id="@+id/nameRegButton"
-            android:layout_width="127dp"
-            android:layout_height="87dp"
-            android:layout_marginTop="36dp"
+            android:id="@+id/dLButton"
+            android:layout_width="157dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white_1"
+            android:backgroundTint="@color/gold_1"
             android:fontFamily="@font/mulish_semi_bold"
-            android:text="@string/name_Reg_Button"
-            android:textSize="13sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.51"
+            android:text="@string/dL_button"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/idButton" />
 
         <Button
+            android:id="@+id/nameRegButton"
+            android:layout_width="157dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/gold_1"
+            android:fontFamily="@font/mulish_semi_bold"
+            android:text="@string/name_Reg_Button"
+            android:textColor="@color/white_1"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.094"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dLButton" />
+
+        <Button
             android:id="@+id/businessRegButton"
-            android:layout_width="127dp"
-            android:layout_height="87dp"
-            android:layout_marginTop="36dp"
-            android:layout_marginEnd="12dp"
+            android:layout_width="157dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white_1"
+            android:layout_marginEnd="23dp"
+
+            android:backgroundTint="@color/gold_1"
             android:fontFamily="@font/mulish_semi_bold"
             android:text="@string/business_Reg_Button"
             android:textSize="13sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/kraButton" />
-
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cardView"
@@ -110,18 +126,23 @@
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/welcome"
+                android:fontFamily="@font/mulish_bold"
                 android:gravity="center"
+                android:text="@string/welcome"
+                android:textColor="@color/black_1"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appBarLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="54dp"
             app:layout_constraintTop_toTopOf="parent">
 
             <androidx.appcompat.widget.Toolbar
@@ -135,8 +156,10 @@
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="136dp"
+            android:layout_marginBottom="108dp"
             android:gravity="center"
+            android:textColor="@color/gray_1"
+            android:fontFamily="@font/mulish_semi_bold"
             android:text="@string/applicationInfo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -147,7 +170,9 @@
             android:id="@+id/websitebutton3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="48dp"
+            android:layout_marginBottom="36dp"
+            android:textColor="@color/white_1"
+            android:fontFamily="@font/mulish_semi_bold"
             android:text="@string/website"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

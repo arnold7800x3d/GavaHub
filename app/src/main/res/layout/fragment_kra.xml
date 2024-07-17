@@ -14,25 +14,26 @@
         android:id="@+id/kraTitleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
-        android:gravity="center"
-        android:textColor="@color/black_1"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/mulish_semi_bold"
-        android:textSize="20sp"
+        android:gravity="center"
         android:text="@string/kra_title"
+        android:textColor="@color/black_1"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/residencyEditText"
-        android:layout_width="300dp"
+        android:layout_width="270dp"
         android:layout_height="38dp"
         android:layout_marginTop="36dp"
         android:padding="3dp"
         android:ems="10"
         android:inputType="text"
+        android:autofillHints=""
         android:hint="@string/kra_residency"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,20 +41,21 @@
 
     <EditText
         android:id="@+id/kraNameEditText"
-        android:layout_width="300dp"
+        android:layout_width="270dp"
         android:layout_height="38dp"
         android:layout_marginTop="20dp"
         android:padding="3dp"
         android:ems="10"
         android:hint="@string/kra_name"
         android:inputType="text"
+        android:autofillHints="name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/residencyEditText" />
 
     <EditText
         android:id="@+id/kraDateeditTextDate"
-        android:layout_width="163dp"
+        android:layout_width="135dp"
         android:layout_height="38dp"
         android:padding="3dp"
         android:layout_marginStart="36dp"
@@ -61,12 +63,13 @@
         android:ems="10"
         android:hint="@string/kra_date"
         android:inputType="date"
+        android:autofillHints=""
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/kraeditTextTextEmailAddress" />
 
     <EditText
         android:id="@+id/kraIDNoeditTextNumber"
-        android:layout_width="163dp"
+        android:layout_width="135dp"
         android:layout_height="38dp"
         android:layout_marginTop="28dp"
         android:padding="3dp"
@@ -74,12 +77,13 @@
         android:ems="10"
         android:hint="@string/idNo"
         android:inputType="number"
+        android:autofillHints=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/kraeditTextTextEmailAddress" />
 
     <EditText
         android:id="@+id/kraSexeditTextText"
-        android:layout_width="163dp"
+        android:layout_width="135dp"
         android:layout_height="38dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="24dp"
@@ -99,6 +103,7 @@
         android:ems="10"
         android:hint="@string/kra_postaladdress"
         android:inputType="textPostalAddress"
+        android:autofillHints="postalAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -112,13 +117,14 @@
         android:padding="3dp"
         android:hint="@string/kra_pintype"
         android:inputType="text"
+        android:autofillHints=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/kraeditTextTextPostalAddress" />
 
     <EditText
         android:id="@+id/kraZipCodeeditTextNumber"
-        android:layout_width="163dp"
+        android:layout_width="135dp"
         android:layout_height="38dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="36dp"
@@ -132,13 +138,14 @@
 
     <EditText
         android:id="@+id/kraeditTextTextEmailAddress"
-        android:layout_width="300dp"
+        android:layout_width="270dp"
         android:layout_height="38dp"
         android:layout_marginTop="16dp"
         android:padding="3dp"
         android:ems="10"
         android:hint="@string/kra_email"
         android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/kraNameEditText" />

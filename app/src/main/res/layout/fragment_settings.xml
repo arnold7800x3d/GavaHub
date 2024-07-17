@@ -1,13 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SettingsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_page"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
 
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/mulish_bold"
+            android:text="@string/settings"
+            android:textColor="@color/black_1"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.17"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="377dp"
+            android:layout_height="430dp"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/mulish_semi_bold"
+                android:text="@string/language_settings"
+                android:textColor="@color/gold_1"
+                android:textSize="17sp" />
+
+            <Spinner
+                android:id="@+id/language_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_margin="15dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/mulish_semi_bold"
+                android:text="@string/notification"
+                android:textColor="@color/gold_1"
+                android:textSize="17sp"
+                />
+
+            <Switch
+                android:id="@+id/notification_switch"
+                android:layout_width="248dp"
+                android:layout_height="53dp"
+                android:layout_margin="15dp"
+                android:text="@string/enable_notifications"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="128dp"
+                android:layout_height="69dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/mulish_semi_bold"
+                android:text="@string/save_settings"
+                android:textColor="@color/white_1"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/logout_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/mulish_semi_bold"
+            android:text="@string/app_rights"
+            android:textColor="@color/gray_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
