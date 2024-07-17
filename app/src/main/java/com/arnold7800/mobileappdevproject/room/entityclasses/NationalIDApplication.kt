@@ -23,8 +23,8 @@ data class NationalIDApplication(
     val pob: String,
 
     @ColumnInfo(name = "applicant_phone_number")
-    val phoneNo: Int,
+    val phoneNo: String,
 
     @ColumnInfo(name = "zip_code")
-    val zipCode: Int
+    val zipCode: String
 )

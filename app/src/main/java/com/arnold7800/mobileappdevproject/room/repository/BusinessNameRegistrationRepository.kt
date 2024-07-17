@@ -13,7 +13,5 @@ class BusinessNameRegistrationRepository @Inject constructor(private val busName
         busNameRegDao.insertApplicantDetails(application)
     }
 
-    suspend fun updateApplicantsDetails(application: BusinessNameRegistrationApplication) {
-        busNameRegDao.updateApplicantDetails(application)
-    }
+
 }

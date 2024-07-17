@@ -23,13 +23,13 @@ data class KraApplication(
     val dob: String,
 
     @ColumnInfo(name = "applicant_idNo")
-    val idNo: Int,
+    val idNo: String,
 
     @ColumnInfo(name = "applicant_sex")
     val sex: String,
 
     @ColumnInfo(name = "zip_code")
-    val zipCode: Int,
+    val zipCode: String,
 
     @ColumnInfo(name = "applicant_postal_address")
     val postalAddress: String,

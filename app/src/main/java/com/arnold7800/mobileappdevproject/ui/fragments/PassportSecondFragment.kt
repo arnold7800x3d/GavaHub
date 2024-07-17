@@ -42,15 +42,15 @@ class PassportSecondFragment : Fragment() {
 
     private fun insertDataToDatabase(onInsertComplete: (View) -> Unit) {
         val motherName = binding.passport2MothereditTextText.text.toString()
-        val motherId = binding.passport2ID1editTextNumber2.text.toString().toInt()
+        val motherId = binding.passport2ID1editTextNumber2.text.toString()
         val motherDob = binding.passport2Date1editTextDate4.text.toString()
         val motherDod = binding.passporteditTextDate5.text.toString()
         val fatherName = binding.passport2FathereditTextText3.text.toString()
-        val fatherId = binding.passport2ID2editTextNumber5.text.toString().toInt()
+        val fatherId = binding.passport2ID2editTextNumber5.text.toString()
         val fatherDob = binding.passport2Date2editTextNumber6.text.toString()
         val fatherDod = binding.passport2Date3editTextDate2.text.toString()
         val guardianName = binding.id2GuardianeditTextText4.text.toString()
-        val guardianId = binding.passporteditTextNumber7.text.toString().toInt()
+        val guardianId = binding.passporteditTextNumber7.text.toString()
         val guardianDob = binding.passporteditTextDate3.text.toString()
         val guardianDod = binding.passporteditTextDate5.text.toString()
         val relationship = binding.editTextText5.text.toString()

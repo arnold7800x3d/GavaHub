@@ -45,8 +45,8 @@ class NationalIDFragment : Fragment() {
         val applicantDob = binding.iddNameeditTextDate.text.toString()
         val applicantSex = binding.editTextText2.text.toString()
         val applicantPob = binding.idPlaceofBirtheditTextText3.text.toString()
-        val applicantPhoneNo = binding.editTextNumber.text.toString().toInt()
-        val zipCode = binding.idZipeditTextNumber2.text.toString().toInt()
+        val applicantPhoneNo = binding.editTextNumber.text.toString()
+        val zipCode = binding.idZipeditTextNumber2.text.toString()
 
         if (inputCheck(applicantName)) {
             val nationalIDApplicants = NationalIDApplication(

@@ -51,7 +51,7 @@ class BusinessRegFragment : Fragment() {
 
         if(inputCheck(applicantAName,businessName)){
             //Creating the object
-            val businessApplicants = BusinessRegistrationApplication(0, applicantAName, Integer.parseInt(applicantAIdNo), applicantBName, Integer.parseInt(applicantBIdNo), applicantCName, Integer.parseInt(applicantCIdNo), applicantDName, Integer.parseInt(applicantDIdNo), businessName)
+            val businessApplicants = BusinessRegistrationApplication(0, applicantAName, applicantAIdNo, applicantBName, applicantBIdNo, applicantCName, applicantCIdNo, applicantDName, applicantDIdNo, businessName)
 
             //Add data to database
             busRegViewModel.insertApplicantDetails(businessApplicants)
@@ -66,7 +66,6 @@ class BusinessRegFragment : Fragment() {
 
     }
 
-    //ensure at least one applicant
     private fun inputCheck(applicantAName: String, businessName: String): Boolean {
         return !(TextUtils.isEmpty(applicantAName) && TextUtils.isEmpty(businessName))
     }

@@ -46,7 +46,7 @@ class DrivingLicenseInstructionFragment : Fragment() {
 
     private fun insertDataToDatabase(onInsertComplete: (View) -> Unit) {
         val instructor = binding.dlInstructorNameeditTextText.text.toString()
-        val instructorNtsaNo = binding.dLInstructorNTSANumbereditTextText2.text.toString().toInt()
+        val instructorNtsaNo = binding.dLInstructorNTSANumbereditTextText2.text.toString()
         val school = binding.dLSchooleditTextText4.text.toString()
         val address = binding.dLSchoolAddresseditTextTextPostalAddress.text.toString()
         val category = binding.dLLicenseCategoryeditTextText3.text.toString()

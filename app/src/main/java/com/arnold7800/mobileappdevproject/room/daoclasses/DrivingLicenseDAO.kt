@@ -11,6 +11,5 @@ interface DrivingLicenseDAO {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertApplicantDetails(application: DrivingLicenseApplication): Long
 
-    @Update
-    suspend fun updateApplicantDetails(application: DrivingLicenseApplication)
+
 }

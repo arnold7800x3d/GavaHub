@@ -17,22 +17,22 @@ data class DrivingLicenseApplication(
     val name: String,
 
     @ColumnInfo(name = "applicant_phone_number")
-    val phoneNumber: Int,
+    val phoneNumber: String,
 
     @ColumnInfo(name = "applicant_email")
     val email:String,
 
     @ColumnInfo(name = "applicant_dob")
-    val dob: Int,
+    val dob: String,
 
     @ColumnInfo(name = "applicant_idNo")
-    val idNo: Int,
+    val idNo: String,
 
     @ColumnInfo(name = "applicant_sex")
     val sex: String,
 
     @ColumnInfo(name = "zipcode")
-    val zipCode: Int,
+    val zipCode: String,
 
     @ColumnInfo(name = "applicant_postal_address")
     val applicantPostalAddress: String,

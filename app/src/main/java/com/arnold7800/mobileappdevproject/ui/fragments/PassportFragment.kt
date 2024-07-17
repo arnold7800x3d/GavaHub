@@ -44,8 +44,8 @@ class PassportFragment : Fragment() {
         val applicantDob = binding.passportDobeditTextDate2.text.toString()
         val applicantSex = binding.passportSexeditTextText3.text.toString()
         val applicantPob = binding.editTextText4.text.toString()
-        val applicantPhoneNo = binding.passportPhoneNoeditTextNumber2.text.toString().toInt()
-        val zipCode = binding.passportZipeditTextNumber3.text.toString().toInt()
+        val applicantPhoneNo = binding.passportPhoneNoeditTextNumber2.text.toString()
+        val zipCode = binding.passportZipeditTextNumber3.text.toString()
 
         if (inputCheck(applicantName)) {
             val passportApplicants = PassportApplicantDetailsApplication(

@@ -42,9 +42,9 @@ class KraFragment : Fragment() {
         val applicantName = binding.kraNameEditText.text.toString()
         val applicantEmail = binding.kraeditTextTextEmailAddress.text.toString()
         val applicantDob = binding.kraDateeditTextDate.text.toString()
-        val applicantIdNo = binding.kraIDNoeditTextNumber.text.toString().toInt()
+        val applicantIdNo = binding.kraIDNoeditTextNumber.text.toString()
         val applicantSex = binding.kraSexeditTextText.text.toString()
-        val zipCode = binding.kraZipCodeeditTextNumber.text.toString().toInt()
+        val zipCode = binding.kraZipCodeeditTextNumber.text.toString()
         val applicantAddress = binding.kraeditTextTextPostalAddress.text.toString()
         val pinType = binding.kraTypeeditTextText.text.toString()
 

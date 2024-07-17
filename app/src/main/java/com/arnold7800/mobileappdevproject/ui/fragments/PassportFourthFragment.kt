@@ -40,10 +40,10 @@ class PassportFourthFragment : Fragment() {
 
     private fun insertDataToDatabase(onInsertComplete: (View) -> Unit) {
         val kinName = binding.passportNextOfKinNameeditTextText.text.toString()
-        val kinId = binding.passportNextOfKinIDeditTextNumber2.text.toString().toInt()
+        val kinId = binding.passportNextOfKinIDeditTextNumber2.text.toString()
         val kinDob = binding.passportNextOfKinDOBeditTextDate2.text.toString()
         val kinSex = binding.passportNextOfKinSexeditTextText3.text.toString()
-        val kinPhone = binding.passportNextOfKinPhoneeditTextPhone.text.toString().toInt()
+        val kinPhone = binding.passportNextOfKinPhoneeditTextPhone.text.toString()
         val relationship = binding.passportNextOfKinRshpeditTextText6.text.toString()
 
         if (inputCheck(kinName)) {

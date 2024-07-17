@@ -9,8 +9,6 @@ import com.arnold7800.mobileappdevproject.room.entityclasses.BusinessNameRegistr
 @Dao
 interface BusinessNameRegistrationDAO {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun insertApplicantDetails(application: BusinessNameRegistrationApplication):Long
+    suspend fun insertApplicantDetails(application: BusinessNameRegistrationApplication): Long
 
-    @Update
-    suspend fun updateApplicantDetails(application: BusinessNameRegistrationApplication)
 }

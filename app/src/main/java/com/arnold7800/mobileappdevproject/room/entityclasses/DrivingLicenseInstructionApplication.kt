@@ -14,7 +14,7 @@ data class DrivingLicenseInstructionApplication(
     val drivingInstructorName: String,
 
     @ColumnInfo(name = "driving_instructor_ntsaNO")
-    val drivingInstructorNtsaNo: Int,
+    val drivingInstructorNtsaNo: String,
 
     @ColumnInfo(name = "driving_school")
     val drivingSchool: String,

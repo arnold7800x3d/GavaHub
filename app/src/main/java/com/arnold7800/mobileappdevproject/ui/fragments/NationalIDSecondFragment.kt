@@ -45,15 +45,15 @@ class NationalIDSecondFragment : Fragment() {
 
     private fun insertDataToDatabase(onInsertComplete: (View) -> Unit) {
         val motherName = binding.id2MothereditTextText.text.toString()
-        val motherIdNo = binding.id2ID2editTextNumber5.text.toString().toInt()
+        val motherIdNo = binding.id2ID2editTextNumber5.text.toString()
         val motherDob = binding.id2Date1editTextDate4.text.toString()
         val motherDod = binding.editTextDate.text.toString()
         val fatherName = binding.id2FathereditTextText3.text.toString()
-        val fatherIdNo = binding.id2ID2editTextNumber5.text.toString().toInt()
+        val fatherIdNo = binding.id2ID2editTextNumber5.text.toString()
         val fatherDob = binding.id2Date2editTextNumber6.text.toString()
         val fatherDod = binding.id2Date3editTextDate2.text.toString()
         val guardianName = binding.id2GuardianeditTextText4.text.toString()
-        val guardianIdNo = binding.editTextNumber7.text.toString().toInt()
+        val guardianIdNo = binding.editTextNumber7.text.toString()
         val guardianDob = binding.editTextDate3.text.toString()
         val guardianDod = binding.editTextDate5.text.toString()
         val guardianRelationship = binding.editTextText5.text.toString()

@@ -15,7 +15,7 @@ data class PassportParentDetailsApplication(
     val motherName: String,
 
     @ColumnInfo(name = "mother_idNo")
-    val motherIdNo: Int,
+    val motherIdNo: String,
 
     @ColumnInfo(name = "mother_dob")
     val motherDob: String,
@@ -27,7 +27,7 @@ data class PassportParentDetailsApplication(
     val fatherName: String,
 
     @ColumnInfo(name = "father_idNo")
-    val fatherIdNo: Int,
+    val fatherIdNo: String,
 
     @ColumnInfo(name = "father_dob")
     val fatherDob: String,
@@ -39,7 +39,7 @@ data class PassportParentDetailsApplication(
     val guardianName: String,
 
     @ColumnInfo(name = "guardian_idNo")
-    val guardianIdNo: Int,
+    val guardianIdNo: String,
 
     @ColumnInfo(name = "guardian_dob")
     val guardianDob: String,

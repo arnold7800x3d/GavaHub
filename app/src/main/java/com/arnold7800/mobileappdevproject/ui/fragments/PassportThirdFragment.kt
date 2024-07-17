@@ -43,9 +43,9 @@ class PassportThirdFragment : Fragment() {
         val recommenderName = binding.passportRecommenderNameeditTextText.text.toString()
         val recommenderDoB = binding.passportRecommenderDOBeditTextDate2.text.toString()
         val recommenderPhoneNo =
-            binding.passportRecommenderPhoneeditTextNumber2.text.toString().toInt()
+            binding.passportRecommenderPhoneeditTextNumber2.text.toString()
         val recommenderSex = binding.passportRecommenderSexeditTextText3.text.toString()
-        val recommenderId = binding.passportRecommenderIDeditTextNumber3.text.toString().toInt()
+        val recommenderId = binding.passportRecommenderIDeditTextNumber3.text.toString()
 
         if (inputCheck(recommenderName)) {
             val passRecApplicants = PassportRecommenderDetailsApplication(

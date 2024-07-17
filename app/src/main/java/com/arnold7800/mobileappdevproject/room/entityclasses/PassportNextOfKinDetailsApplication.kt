@@ -14,7 +14,7 @@ data class PassportNextOfKinDetailsApplication(
     val nextOfKinName: String,
 
     @ColumnInfo(name = "next_of_kin_idNo")
-    val nextOfKinIdNo: Int,
+    val nextOfKinIdNo: String,
 
     @ColumnInfo(name = "next_of_kin_dob")
     val nextOfKinDob: String,
@@ -23,7 +23,7 @@ data class PassportNextOfKinDetailsApplication(
     val nextOfKinSex: String,
 
     @ColumnInfo(name = "next_of_kin_phone_no")
-    val nextOfKinPhoneNo: Int,
+    val nextOfKinPhoneNo: String,
 
     @ColumnInfo(name = "next_of_kin_relationship")
     val nextOfKinRelationship: String

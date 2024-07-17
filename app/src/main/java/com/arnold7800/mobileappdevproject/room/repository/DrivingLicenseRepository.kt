@@ -12,7 +12,5 @@ class DrivingLicenseRepository @Inject constructor(private val drivingLicenseDao
         drivingLicenseDao.insertApplicantDetails(application)
     }
 
-    suspend fun updateApplicantDetails(application: DrivingLicenseApplication) {
-        drivingLicenseDao.updateApplicantDetails(application)
-    }
+
 }

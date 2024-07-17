@@ -43,12 +43,12 @@ class DrivingLicenseFragment : Fragment() {
     private fun insertDataToDatabase(onInsertComplete: (View) -> Unit) {
         val applicationNature = binding.dLReneworFirsteditTextText3.text.toString()
         val applicantName = binding.dLNameeditTextText.text.toString()
-        val applicantPhone = binding.dLPhoneeditTextPhone.text.toString().toInt()
+        val applicantPhone = binding.dLPhoneeditTextPhone.text.toString()
         val applicantEmail = binding.dLEmaileditTextTextEmailAddress.text.toString()
-        val applicantDob = binding.dLDateeditTextDate.text.toString().toInt()
-        val applicantIdNo = binding.dLIDeditTextNumber.text.toString().toInt()
+        val applicantDob = binding.dLDateeditTextDate.text.toString()
+        val applicantIdNo = binding.dLIDeditTextNumber.text.toString()
         val applicantSex = binding.dLSexeditTextText2.text.toString()
-        val zipCode = binding.dLZipeditTextNumber2.text.toString().toInt()
+        val zipCode = binding.dLZipeditTextNumber2.text.toString()
         val applicantAddress = binding.dLZipeditTextNumber2.text.toString()
 
         if (inputCheck(applicantName, applicantEmail)) {

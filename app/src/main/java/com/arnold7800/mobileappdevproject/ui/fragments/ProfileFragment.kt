@@ -1,4 +1,4 @@
-package com.arnold7800.mobileappdevproject.ui.fragments
+package com.arnold7800.mobileappdevproject
 
 import android.net.Uri
 import android.os.Bundle

@@ -18,11 +18,11 @@ data class PassportRecommenderDetailsApplication(
     val recommenderDob: String,
 
     @ColumnInfo(name = "recommender_phone_no")
-    val recommenderPhoneNo: Int,
+    val recommenderPhoneNo: String,
 
     @ColumnInfo(name = "recommender_sex")
     val recommenderSex: String,
 
     @ColumnInfo(name = "recommender_idNo")
-    val recommenderIDNo: Int
+    val recommenderIDNo: String
 )

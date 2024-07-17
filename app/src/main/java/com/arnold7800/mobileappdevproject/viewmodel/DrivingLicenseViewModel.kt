@@ -26,11 +26,5 @@ class DrivingLicenseViewModel(application: Application): AndroidViewModel(applic
         }
     }
 
-    fun updateApplicantDetails(application: DrivingLicenseApplication) {
-        viewModelScope.launch(Dispatchers.IO) {
-            Log.d("Driving License View Model", "Updating: $application")
-            repository.updateApplicantDetails(application)
-            Log.d("Driving License View Model" ,"Updated sucessfully")
-        }
-    }
+
 }

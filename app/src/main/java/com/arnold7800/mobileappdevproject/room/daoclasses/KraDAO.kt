@@ -11,7 +11,6 @@ interface KraDAO {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertApplicantDetails(application: KraApplication):Long
 
-    @Update
-    suspend fun updateApplicantDetails(application: KraApplication)
+
 
 }

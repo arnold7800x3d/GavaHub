@@ -14,25 +14,25 @@ data class BusinessNameRegistrationApplication(
     val ownerA: String,
 
     @ColumnInfo(name = "owner_A_IdNo")
-    val ownerAIdNo: Int,
+    val ownerAIdNo: String,
 
     @ColumnInfo(name = "owner_B")
     val ownerB: String,
 
     @ColumnInfo(name = "owner_B_IdNo")
-    val ownerBIdNo: Int,
+    val ownerBIdNo: String,
 
     @ColumnInfo(name = "owner_C")
     val ownerC: String,
 
     @ColumnInfo(name = "owner_CIdNo")
-    val ownerCIdNo: Int,
+    val ownerCIdNo: String,
 
     @ColumnInfo(name = "owner_D")
     val ownerD: String,
 
     @ColumnInfo(name = "owner_DIdNo")
-    val ownerDIdNo: Int,
+    val ownerDIdNo: String,
 
     @ColumnInfo(name = "business_name")
     val businessName: String,
@@ -41,5 +41,5 @@ data class BusinessNameRegistrationApplication(
     val businessAddress: String,
 
     @ColumnInfo(name = "zipcode")
-    val zipCode: Int
+    val zipCode: String
 )

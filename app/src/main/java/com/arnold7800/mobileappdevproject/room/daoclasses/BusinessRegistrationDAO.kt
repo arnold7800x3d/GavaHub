@@ -12,6 +12,5 @@ interface BusinessRegistrationDAO {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertApplicantDetails(application: BusinessRegistrationApplication):Long
 
-    @Update
-    suspend fun updateApplicantDetails(application: BusinessRegistrationApplication)
+
 }

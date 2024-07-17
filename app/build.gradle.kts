@@ -58,6 +58,7 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics")
     implementation ("com.google.firebase:firebase-storage-ktx:20.0.0")
     implementation ("com.google.android.material:material:1.8.0")
+    implementation("androidx.activity:activity-ktx:1.8.2")
 
 
     val lifecycle_version = "2.8.3"

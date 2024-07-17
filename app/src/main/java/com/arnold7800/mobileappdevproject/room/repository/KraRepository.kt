@@ -12,7 +12,5 @@ class KraRepository @Inject constructor(private val kraDao: KraDAO){
         kraDao.insertApplicantDetails(application)
     }
 
-    suspend fun updateApplicantsDetails(application: KraApplication){
-        kraDao.updateApplicantDetails(application)
-    }
+
 }

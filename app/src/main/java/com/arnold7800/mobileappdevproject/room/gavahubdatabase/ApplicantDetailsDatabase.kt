@@ -27,7 +27,7 @@ import com.arnold7800.mobileappdevproject.room.daoclasses.PassportParentDetailsD
 import com.arnold7800.mobileappdevproject.room.entityclasses.PassportRecommenderDetailsApplication
 import com.arnold7800.mobileappdevproject.room.daoclasses.PassportRecommenderDetailsDAO
 
-@Database(entities = [PassportApplicantDetailsApplication::class, NationalIDApplication::class, KraApplication::class, DrivingLicenseApplication::class, BusinessNameRegistrationApplication::class, BusinessRegistrationApplication::class,  DrivingLicenseInstructionApplication::class, NationalIDApplicationParentDetails::class, PassportParentDetailsApplication::class, PassportRecommenderDetailsApplication::class, PassportNextOfKinDetailsApplication::class], version = 4, exportSchema = false)
+@Database(entities = [PassportApplicantDetailsApplication::class, NationalIDApplication::class, KraApplication::class, DrivingLicenseApplication::class, BusinessNameRegistrationApplication::class, BusinessRegistrationApplication::class,  DrivingLicenseInstructionApplication::class, NationalIDApplicationParentDetails::class, PassportParentDetailsApplication::class, PassportRecommenderDetailsApplication::class, PassportNextOfKinDetailsApplication::class], version = 6, exportSchema = false)
 abstract class ApplicantDetailsDatabase : RoomDatabase(){
 
     abstract fun passportApplicantDetailsDAO(): PassportApplicantDetailsDAO

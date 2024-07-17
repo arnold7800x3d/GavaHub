@@ -11,7 +11,6 @@ interface PassportApplicantDetailsDAO {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertApplicantDetails(application: PassportApplicantDetailsApplication):Long
 
-    @Update
-    suspend fun updateApplicantDetails(application: PassportApplicantDetailsApplication)
+
 
 }

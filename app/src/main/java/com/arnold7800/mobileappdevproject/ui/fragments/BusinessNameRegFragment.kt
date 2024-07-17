@@ -50,8 +50,8 @@ class BusinessNameRegFragment : Fragment() {
         val businessAddress = binding.busRegNameeditTextTextPostalAddress.text.toString()
         val zipCode = binding.busRegNameZipCodeeditTextNumberSigned.text.toString()
 
-        if(inputCheck(applicantAName, businessName)){
-            val businessNameApplicants = BusinessNameRegistrationApplication(0, applicantAName, Integer.parseInt(applicantAIdNo), applicantBName, Integer.parseInt(applicantBIdNo), applicantCName, Integer.parseInt(applicantCIdNo), applicantDName, Integer.parseInt(applicantDIdNo), businessName, businessAddress, Integer.parseInt(zipCode) )
+        if(inputCheck(applicantAName, applicantAIdNo, applicantBName, applicantBIdNo, applicantCName, applicantCIdNo, applicantDName, applicantDIdNo, businessName, businessAddress, zipCode)){
+            val businessNameApplicants = BusinessNameRegistrationApplication(0, applicantAName, applicantAIdNo, applicantBName, applicantBIdNo, applicantCName, applicantCIdNo, applicantDName, applicantDIdNo, businessName, businessAddress, zipCode)
 
             businessNameViewModel.insertApplicantDetails(businessNameApplicants)
             Toast.makeText(requireContext(), "Details successfully added!!", Toast.LENGTH_LONG)
@@ -65,8 +65,7 @@ class BusinessNameRegFragment : Fragment() {
 
     }
 
-    //ensure at least one applicant
-    private fun inputCheck(applicantAName: String, businessName: String): Boolean {
-        return !(TextUtils.isEmpty(applicantAName) && TextUtils.isEmpty(businessName))
+    private fun inputCheck(applicantAName: String, applicantAIdNo: String, applicantBName: String, applicantBIdNo: String, applicantCName: String, applicantCIdNo: String, applicantDName: String, applicantDIdNo: String, businessName: String, businessAddress: String, zipCode: String): Boolean {
+        return !(TextUtils.isEmpty(applicantAName) && TextUtils.isEmpty(applicantAIdNo) && TextUtils.isEmpty(applicantBName) && TextUtils.isEmpty(applicantBIdNo) && TextUtils.isEmpty(applicantCName) && TextUtils.isEmpty(applicantCIdNo) && TextUtils.isEmpty(applicantDName) && TextUtils.isEmpty(applicantDIdNo) && TextUtils.isEmpty(businessName) && TextUtils.isEmpty(businessAddress) && TextUtils.isEmpty(zipCode))
     }
 }

@@ -11,7 +11,6 @@ interface NationalIDDAO {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertApplicantDetails(application: NationalIDApplication):Long
 
-    @Update
-    suspend fun updateApplicantDetails(application: NationalIDApplication)
+
 
 }
