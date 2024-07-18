@@ -53,7 +53,9 @@
                 android:layout_height="53dp"
                 android:layout_margin="15dp"
                 android:textSize="15sp"
-                android:tag="@string/languages"/>
+                android:tag="@string/languages"
+                android:clickable="true"
+                android:focusable="true"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -71,7 +73,9 @@
                 android:layout_height="53dp"
                 android:layout_margin="15dp"
                 android:text="@string/enable_notifications"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:clickable="true"
+                android:focusable="true"/>
 
             <Button
                 android:id="@+id/save_button"
