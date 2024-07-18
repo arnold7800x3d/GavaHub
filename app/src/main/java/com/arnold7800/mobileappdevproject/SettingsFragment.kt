@@ -5,6 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
+import android.widget.Spinner
+import android.widget.Switch
+import java.util.Locale
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -20,6 +25,9 @@ class SettingsFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    private lateinit var spinner: Spinner
+    private lateinit var switchButton: Switch
+    private var message: String? =null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,7 +42,65 @@ class SettingsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_settings, container, false)
+        val view = inflater.inflate(R.layout.fragment_settings, container, false)
+
+        spinner = view.findViewById(R.id.language_spinner)
+        switchButton = view.findViewById(R.id.notification_switch)
+        // Create an ArrayAdapter using the string array and a default spinner layout.
+        ArrayAdapter.createFromResource(
+            requireContext(),
+            R.array.languages,
+            android.R.layout.simple_spinner_item
+        ).also { adapter ->
+            // Specify the layout to use when the list of choices appears.
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            // Apply the adapter to the spinner.
+            spinner.adapter = adapter
+        }
+
+        spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
+                val selectedLanguage = parent.getItemAtPosition(position).toString()
+
+                when (selectedLanguage) {
+                    "English" -> {
+                        // Set the language to English
+                        Locale.setDefault(Locale.ENGLISH)
+                        // Update the configuration
+                        updateConfiguration(Locale.ENGLISH)
+                    }
+                    "Swahili" -> {
+                        // Set the language to Swahili
+                        Locale.setDefault(java.util.Locale("sw", "KE"))
+                        // Update the configuration
+                        updateConfiguration(java.util.Locale("sw", "KE"))
+                    }
+                }
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                TODO("Not yet implemented")
+            }
+
+            fun updateConfiguration(locale: java.util.Locale) {
+                val config = resources.configuration
+                config.locale = locale
+                resources.updateConfiguration(config, resources.displayMetrics)
+                requireActivity().recreate() // Restart the activity to apply the changes
+            }
+
+            }
+
+
+        switchButton.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                message = "Notifications Enabled"
+            } else {
+                // Switch is turned off
+                message = "Enable Notifications"
+            }
+        }
+        return view
     }
 
     companion object {

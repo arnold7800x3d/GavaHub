@@ -14,7 +14,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="@font/mulish_semi_bold"
         android:gravity="center"
         android:padding="5dp"
@@ -31,28 +31,27 @@
         android:id="@+id/dLThreeYearbutton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="255dp"
+        android:layout_marginBottom="225dp"
+        android:backgroundTint="@color/gold_1"
         android:fontFamily="@font/mulish_semi_bold"
-        android:textColor="@color/white_1"
         android:text="@string/payment_button"
+        android:textColor="@color/white_1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dLOneYearbutton4"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.836" />
 
     <TextView
         android:id="@+id/dLThreeYeartextView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
-        android:layout_marginStart="10dp"
-        android:textColor="@color/black_2"
+        android:layout_marginTop="76dp"
         android:text="@string/dLthreeyear"
+        android:textColor="@color/gray_1"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -60,28 +59,26 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginTop="72dp"
         android:text="@string/dLoneyear"
-        android:textColor="@color/black_2"
+        android:textColor="@color/gray_1"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dLThreeYeartextView7" />
+        app:layout_constraintTop_toBottomOf="@+id/dLOneYearbutton4" />
 
     <Button
         android:id="@+id/dLOneYearbutton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="14dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/mulish_semi_bold"
         android:text="@string/payment_button"
         android:textColor="@color/white_1"
+        android:backgroundTint="@color/gold_1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.363"
-        app:layout_constraintStart_toEndOf="@+id/dLThreeYeartextView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dLThreeYeartextView7" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

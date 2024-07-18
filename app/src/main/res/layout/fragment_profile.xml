@@ -14,13 +14,13 @@
             android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="44dp"
+            android:layout_marginTop="8dp"
             android:fontFamily="@font/mulish_bold"
             android:text="@string/profile"
             android:textColor="@color/gray_1"
             android:textSize="30sp"
             app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="16dp" />
+            tools:layout_editor_absoluteX="1dp" />
 
         <ImageView
             android:id="@+id/profileImageView"
@@ -40,6 +40,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="72dp"
             android:text="@string/set_profile_pic"
+            android:fontFamily="@font/mulish_semi_bold"
+            android:textColor="@color/white_1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/profileImageView" />
@@ -48,13 +50,15 @@
             android:id="@+id/nameEditText"
             android:layout_width="148dp"
             android:layout_height="33dp"
-            android:layout_marginTop="172dp"
-            android:padding="3dp"
-            android:layout_marginEnd="40dp"
+            android:layout_marginTop="168dp"
+            android:layout_marginEnd="24dp"
+            android:autofillHints="name"
             android:hint="@string/kra_name"
             android:inputType="text"
-            android:autofillHints="name"
+            android:padding="3dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.704"
+            app:layout_constraintStart_toEndOf="@+id/profileImageView"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
@@ -64,6 +68,8 @@
             android:layout_marginTop="60dp"
             android:text="@string/save_profile"
             app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/mulish_semi_bold"
+            android:textColor="@color/white_1"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/setProfileImageButton" />
@@ -73,7 +79,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="68dp"
-            android:layout_marginTop="112dp"
+            android:layout_marginTop="120dp"
             android:fontFamily="@font/mulish_semi_bold"
             android:text="@string/app_rights"
             android:textColor="@color/gray_1"

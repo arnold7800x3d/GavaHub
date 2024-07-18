@@ -13,14 +13,14 @@
         android:id="@+id/logout_heading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="@font/mulish_bold"
         android:padding="10dp"
         android:text="@string/logout_page"
         android:textColor="@color/black_1"
         android:textSize="30sp"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="-16dp" />
 
     <ImageView
         android:layout_width="240dp"
@@ -37,12 +37,13 @@
         android:id="@+id/logout_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
         android:layout_marginTop="108dp"
         android:fontFamily="@font/mulish_semi_bold"
         android:text="@string/app_rights"
         android:textColor="@color/gray_1"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:flow_horizontalBias="0.5"
         app:layout_constraintTop_toBottomOf="@+id/logoutbutton3" />
 
     <TextView
