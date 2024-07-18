@@ -14,30 +14,58 @@
         android:id="@+id/busRPaymenttextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="204dp"
-        android:padding="10dp"
+        android:layout_marginTop="152dp"
         android:fontFamily="@font/mulish_semi_bold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/busR_payment"
         android:textColor="@color/black_1"
         android:textSize="20sp"
-        android:text="@string/busR_payment"
-        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/busregbutton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white_1"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="148dp"
+        android:fontFamily="@font/mulish_semi_bold"
         android:text="@string/payment_button"
         android:textAllCaps="true"
-        android:fontFamily="@font/mulish_semi_bold"
+        android:textColor="@color/white_1"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/busRPaymenttextView" />
+
+    <EditText
+        android:id="@+id/busregpaymenteditTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="10dp"
+        android:hint="@string/number"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/busregbutton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/busRPaymenttextView"
+        app:layout_constraintVertical_bias="0.645" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="@string/payPhone"
+        app:layout_constraintBottom_toTopOf="@+id/busregpaymenteditTextPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/busRPaymenttextView"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

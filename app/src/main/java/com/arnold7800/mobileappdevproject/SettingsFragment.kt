@@ -27,7 +27,7 @@ class SettingsFragment : Fragment() {
     private var param2: String? = null
     private lateinit var spinner: Spinner
     private lateinit var switchButton: Switch
-    private var message: String? =null
+    private var message: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -59,7 +59,12 @@ class SettingsFragment : Fragment() {
         }
 
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
+            override fun onItemSelected(
+                parent: AdapterView<*>,
+                view: View,
+                position: Int,
+                id: Long
+            ) {
                 val selectedLanguage = parent.getItemAtPosition(position).toString()
 
                 when (selectedLanguage) {
@@ -69,6 +74,7 @@ class SettingsFragment : Fragment() {
                         // Update the configuration
                         updateConfiguration(Locale.ENGLISH)
                     }
+
                     "Swahili" -> {
                         // Set the language to Swahili
                         Locale.setDefault(java.util.Locale("sw", "KE"))
@@ -82,14 +88,9 @@ class SettingsFragment : Fragment() {
                 TODO("Not yet implemented")
             }
 
-            fun updateConfiguration(locale: java.util.Locale) {
-                val config = resources.configuration
-                config.locale = locale
-                resources.updateConfiguration(config, resources.displayMetrics)
-                requireActivity().recreate() // Restart the activity to apply the changes
-            }
 
-            }
+
+        }
 
 
         switchButton.setOnCheckedChangeListener { _, isChecked ->
@@ -102,7 +103,12 @@ class SettingsFragment : Fragment() {
         }
         return view
     }
-
+    private fun updateConfiguration(locale: java.util.Locale) {
+        val config = resources.configuration
+        config.locale = locale
+        resources.updateConfiguration(config, resources.displayMetrics)
+        requireActivity().recreate() // Restart the activity to apply the changes
+    }
     companion object {
         /**
          * Use this factory method to create a new instance of

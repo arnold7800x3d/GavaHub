@@ -14,12 +14,11 @@
         android:id="@+id/passportPaymentInfotextView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="144dp"
         android:fontFamily="@font/mulish_semi_bold"
         android:gravity="center"
         android:padding="10dp"
         android:text="@string/passport_payment"
-        android:textColor="@color/black_1"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -30,83 +29,97 @@
         android:id="@+id/passportAtextView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="140dp"
         android:text="@string/passport34"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:textColor="@color/gray_1"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintTop_toBottomOf="@+id/passportPaymentInfotextView7" />
 
     <TextView
         android:id="@+id/passportBtextView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
         android:text="@string/passport50"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:textColor="@color/gray_1"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintTop_toBottomOf="@+id/passportAbutton3" />
+        app:layout_constraintTop_toBottomOf="@+id/passportAtextView9" />
 
     <TextView
         android:id="@+id/passportCtextView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:textColor="@color/black_1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
         android:text="@string/passport66"
-        android:textColor="@color/gray_1"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintTop_toBottomOf="@+id/passportBtextView10" />
 
     <Button
         android:id="@+id/passportAbutton3"
-        android:layout_width="170dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="@font/mulish_semi_bold"
         android:text="@string/payment_button"
         android:textAllCaps="true"
         android:textColor="@color/white_1"
-        android:textColorHint="@color/gray_2"
-        android:backgroundTint="@color/gold_1"
+        android:textColorHint="@color/white_2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passportAtextView9" />
+        app:layout_constraintTop_toBottomOf="@+id/passportPaymentInfotextView7" />
 
     <Button
         android:id="@+id/passportBbutton4"
-        android:layout_width="170dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/white_1"
         android:fontFamily="@font/mulish_semi_bold"
         android:text="@string/payment_button"
         android:textAllCaps="true"
-        android:backgroundTint="@color/gold_1"
-        android:textColor="@color/white_1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintTop_toBottomOf="@+id/passportBtextView10" />
+        app:layout_constraintTop_toBottomOf="@+id/passportAbutton3" />
 
     <Button
         android:id="@+id/passportCbutton5"
-        android:layout_width="170dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/mulish_semi_bold"
+        android:layout_marginEnd="16dp"
         android:text="@string/payment_button"
         android:textAllCaps="true"
-        android:textColor="@color/white_1"
-        android:backgroundTint="@color/gold_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passportBbutton4" />
+
+
+    <EditText
+        android:id="@+id/busregpaymenteditTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="@string/number"
+        android:inputType="phone"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintTop_toBottomOf="@+id/passportCtextView11" />
+        app:layout_constraintTop_toBottomOf="@+id/passportPaymentInfotextView7" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/payPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passportPaymentInfotextView7" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
