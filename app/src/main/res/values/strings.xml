@@ -100,7 +100,8 @@
     <string name="logo">Logo</string>
     <string name="app_rights">©2024 GavaHub. All rights reserved</string>
     <string name="user_icon">User Icon</string>
-    <string name="payPhone" tools:ignore="MissingTranslation">Kindly enter the phone number which you will use to pay for the service</string>
-    <string name="certupload" tools:ignore="MissingTranslation">Upload a valid business name registration certificate</string>
+    <string name="languages">Languages</string>
+    <string name="payPhone" >Kindly enter the phone number which you will use to pay for the service</string>
+    <string name="certupload">Upload a valid business name registration certificate</string>
     <string name="number" translatable="false">254XXXXXXXXX</string>
 </resources>

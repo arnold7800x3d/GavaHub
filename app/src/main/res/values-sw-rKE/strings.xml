@@ -97,4 +97,6 @@
     <string name="app_rights">©2024 GavaHub. Haki zote zimehifadhiwa</string>
     <string name="user_icon">Ikoni ya Mtumiaji</string>
     <string name="languages">Lugha</string>
+    <string name="payPhone">Tafadhali weka nambari ya simu ambayo utatumia kulipia huduma hiyo</string>
+    <string name="certupload">Pakia cheti halali cha usajili wa jina la biashara</string>
 </resources>
