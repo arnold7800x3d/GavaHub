@@ -17,7 +17,7 @@ interface DarajaAPIServer {
 object NetworkModule {
     val darajaApi: DarajaAPIServer by lazy {
         Retrofit.Builder()
-            .baseUrl("https://7fe0-105-161-136-145.ngrok-free.app")
+            .baseUrl("https://f7b1-105-161-136-145.ngrok-free.app")
             .addConverterFactory(ScalarsConverterFactory.create())
             .build()
             .create(DarajaAPIServer::class.java)
